@@ -1,16 +1,29 @@
-import logo_romo_blanco from '../images/logo_romo_blanco.png'
-import './styles/Inicio_sesion.css';
+import LOGO from "../images/LOGO.png";
+import "./styles/inicio_sesion.css";
+import { Button, Input } from "antd";
+
 function Inicio_sesion() {
   return (
     <div className="Inicio_sesion">
       <header>
-        <img className='logo' src={logo_romo_blanco}></img>
-        <button>hola</button>
-        <tag> 
-        <h2>hols</h2>
-        </tag>
-
+        <img className="logo" src={LOGO}></img>
+        <Button className="login" type="primary">
+          login
+        </Button>
+        <Button className="register" type="primary">
+          Register
+        </Button>
       </header>
+
+      <div className="Area_login">
+        <div>
+          <img className="los" src={LOGO}></img>
+        </div>
+        <a>WELCOME</a>
+       
+        <Input className="user" placeholder="Mail" />
+              </div>
+      
     </div>
   );
 }
