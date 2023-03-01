@@ -1,6 +1,6 @@
 import Search from "antd/es/transfer/search";
 import React, { useState } from "react";
-import { SettingOutlined } from "@ant-design/icons";
+import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 
 // import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
@@ -9,9 +9,8 @@ const MenuBarR = () => {
 
   const items = [
     {
-      label: "Navigation Three - Submenu",
-      key: "SubMenu",
-      icon: <SettingOutlined />,
+      key: "SubAccount",
+      icon: <UserOutlined />,
       children: [
         {
           type: "group",
@@ -42,36 +41,36 @@ const MenuBarR = () => {
           ],
         },
       ],
-    },{
-      label: 'Navigation Three - Submenu',
-      key: 'SubMenu',
-      icon: <SettingOutlined />,
+    },
+    {
+      key: "SubMenu",
+      icon: <InboxOutlined />,
       children: [
         {
-          type: 'group',
-          label: 'Item 1',
+          type: "group",
+          label: "Item 1",
           children: [
             {
-              label: 'Option 1',
-              key: 'setting:1',
+              label: "Option 1",
+              key: "setting:1",
             },
             {
-              label: 'Option 2',
-              key: 'setting:2',
+              label: "Option 2",
+              key: "setting:2",
             },
           ],
         },
         {
-          type: 'group',
-          label: 'Item 2',
+          type: "group",
+          label: "Item 2",
           children: [
             {
-              label: 'Option 3',
-              key: 'setting:3',
+              label: "Option 3",
+              key: "setting:3",
             },
             {
-              label: 'Option 4',
-              key: 'setting:4',
+              label: "Option 4",
+              key: "setting:4",
             },
           ],
         },
@@ -86,7 +85,7 @@ const MenuBarR = () => {
   };
 
   return (
-    <div className="inicio">
+    <>
       <img className="logo" alt="logo" src={"#"}></img>
       <Search placeholder="input search text" onSearch={onSearch} enterButton />
       <Menu
@@ -95,7 +94,7 @@ const MenuBarR = () => {
         mode="horizontal"
         items={items}
       />
-    </div>
+    </>
   );
 };
 

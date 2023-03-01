@@ -1,5 +1,7 @@
 import React from "react";
-import MenuBarR from "../shared/components/MenuBarr";
+import MenuBarR from "../shared/components/MenuBar";
+import "./styles/account_menu.css";
+
 const AccountMenu = () => {
   const products = [
     {
@@ -22,4 +24,3 @@ const AccountMenu = () => {
   );
 };
 export default AccountMenu;
-
