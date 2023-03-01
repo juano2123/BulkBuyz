@@ -29,7 +29,9 @@ float: right;
     float: right;
     margin-top: 15px ;
     margin-right: 10px;
+    
 }
+
 .los{
 
     margin-top: 10px;
@@ -47,6 +49,11 @@ display: flex;
 }
 
 .user{
-    height: 27px;
+    position:absolute;
+    width: 10%;
+    height: 0,4%;
+    top: 50%;
+   left: 22%;
+    
     
 }

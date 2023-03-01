@@ -16,7 +16,7 @@ function Inicio_sesion() {
       </header>
 
       <div className="Area_login">
-        <div>
+       <div> 
           <img className="los" src={LOGO}></img>
         </div>
         <a>WELCOME</a>
