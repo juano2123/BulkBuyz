@@ -33,7 +33,7 @@ const RegisterUser = () => {
         <div className="content_rigth">
           <Register inputRegister={"Name Company"} />
           <Register inputRegister={"ID"} />
-          <InputLogin input Name={"Mail"} />
+          <InputLogin inputName={"Mail"} />
           <InputPassword inputPass={"Password"} />
           <Register inputRegister={"confirmated password"} />
           {/* toca preguntar como se hace esa validacion */}
