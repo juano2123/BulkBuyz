@@ -42,18 +42,10 @@ float: right;
 }
 .Area_login{
 display: flex;
+flex-direction: column;
 }
 .Area_login a{
     font-size: 60px;
     margin-top: 100px;
 }
 
-.user{
-    position:absolute;
-    width: 10%;
-    height: 0,4%;
-    top: 50%;
-   left: 22%;
-    
-    
-}
