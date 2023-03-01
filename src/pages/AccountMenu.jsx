@@ -1,5 +1,5 @@
-import { ProductCard } from "../shared/components/ProductCard";
-
+import React from "react";
+import MenuBarR from "../shared/components/MenuBarr";
 const AccountMenu = () => {
   const products = [
     {
@@ -14,10 +14,10 @@ const AccountMenu = () => {
   ];
 
   return (
-    <div>
-      {products.map((product) => {
-        return <ProductCard product={product} />;
-      })}
+    <div className="inicio">
+      <div className="menu_bar">
+        <MenuBarR />
+      </div>
     </div>
   );
 };
