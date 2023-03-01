@@ -6,17 +6,6 @@ import { ProductCard } from "../shared/components/ProductCard";
 import InputPassword from "../shared/components/InputPassword";
 
 function Inicio_sesion() {
-  const products = [
-    {
-      name: "Airpods",
-      price: 1200,
-    },
-    {
-      name: "Minispeaker",
-      price: 430,
-    },
-  ];
-
   return (
     <div className="Inicio_sesion">
       <header>
@@ -39,10 +28,6 @@ function Inicio_sesion() {
         <InputPassword inputPass={"Password"} />
         <Button> </Button>
       </div>
-
-      {products.map((product) => {
-        return <ProductCard product={product} />;
-      })}
     </div>
   );
 }
