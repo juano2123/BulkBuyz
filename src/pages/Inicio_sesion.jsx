@@ -3,6 +3,7 @@ import "./styles/inicio_sesion.css";
 import { Button } from "antd";
 import InputLogin from "../shared/components/InputLogin";
 import { ProductCard } from "../shared/components/ProductCard";
+import InputPassword from "../shared/components/InputPassword";
 
 function Inicio_sesion() {
   const products = [
@@ -13,10 +14,6 @@ function Inicio_sesion() {
     {
       name: "Minispeaker",
       price: 430,
-    },
-    {
-      name: "apple",
-      price: 100,
     },
   ];
 
@@ -39,7 +36,8 @@ function Inicio_sesion() {
         {/* <a>WELCOME</a> */}
 
         <InputLogin inputName={"Mail"} />
-        <InputLogin inputName={"Password"} />
+        <InputPassword inputPass={"Password"} />
+        <Button> </Button>
       </div>
 
       {products.map((product) => {
