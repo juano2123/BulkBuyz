@@ -17,7 +17,7 @@ const RegisterUser = () => {
       </header>
       <div className="content">
         <div className="create_user">
-          <p>Create yor count</p>
+          <p>Create your Account</p>
         </div>
         <div className="content_left">
           <Register inputRegister={"Country"} />

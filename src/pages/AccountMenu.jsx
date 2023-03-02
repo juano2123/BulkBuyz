@@ -1,5 +1,7 @@
 import React from "react";
-import MenuBarR from "../shared/components/MenuBarr";
+import MenuBarR from "../shared/components/MenuBar";
+import ProductCard from "../shared/components/ProductCard"
+import BarCategories from "../shared/components/BarCategories";
 const AccountMenu = () => {
   const products = [
     {
@@ -17,6 +19,15 @@ const AccountMenu = () => {
     <div className="inicio">
       <div className="menu_bar">
         <MenuBarR />
+      </div>
+      <div className="bar_categories">
+        <BarCategories />
+      </div>
+
+      <div className="card">
+        {products.map((product) => {
+          return <ProductCard product={product} />;
+        })}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Card } from "antd";
 import React from "react";
 
-export const ProductCard = (props) => {
+const ProductCard = (props) => {
   console.log(props);
   return (
     <Card
@@ -13,3 +13,4 @@ export const ProductCard = (props) => {
     </Card>
   );
 };
+export default ProductCard
