@@ -1,5 +1,6 @@
 import BarCategories from "../shared/components/BarCategories";
 import MenuBarR from "../shared/components/MenuBar";
+import ProductoDetalleMasterPro from "../shared/components/ProductoDetalleMasterPro";
 
 const ProductDetail = () => {
   return (
@@ -9,7 +10,7 @@ const ProductDetail = () => {
         <BarCategories />
       </div>
       <div className="productDeta">
-        <ProductDetail />
+        <ProductoDetalleMasterPro />
       </div>
     </div>
   );
