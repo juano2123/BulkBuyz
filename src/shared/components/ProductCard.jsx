@@ -2,7 +2,7 @@ import { Card } from "antd";
 import React from "react";
 
 const ProductCard = (props) => {
-  console.log(props);
+ 
   return (
     <Card
       title={props.product.name}

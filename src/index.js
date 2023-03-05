@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ProductDetail from "./pages/ProductDetail";
+import ProductDetail from "./pages/Home/ProductDetail";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

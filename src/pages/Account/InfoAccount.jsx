@@ -1,4 +1,4 @@
-import MenuBarR from "../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/MenuBar";
 
 const InfoAccount = () => {
   return (

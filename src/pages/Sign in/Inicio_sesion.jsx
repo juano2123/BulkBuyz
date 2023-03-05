@@ -1,9 +1,9 @@
 import LOGO from "../images/LOGO.png";
 import "./styles/inicio_sesion.css";
 import { Button } from "antd";
-import InputLogin from "../shared/components/InputLogin";
-import { ProductCard } from "../shared/components/ProductCard";
-import InputPassword from "../shared/components/InputPassword";
+import InputLogin from "../../shared/components/InputLogin";
+import { ProductCard } from "../../shared/components/ProductCard";
+import InputPassword from "../../shared/components/InputPassword";
 
 function Inicio_sesion() {
   return (
