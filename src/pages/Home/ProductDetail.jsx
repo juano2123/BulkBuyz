@@ -1,7 +1,7 @@
 import BarCategories from "../../shared/components/BarCategories";
 import MenuBarR from "../../shared/components/MenuBar";
 import ProductoDetalleMasterPro from "../../shared/components/ProductoDetalleMasterPro";
-
+import "../styles/ProductoDetalleMasterPro.css";
 const ProductDetail = () => {
   return (
     <div className="product_detail">
