@@ -88,14 +88,22 @@ const MenuBarR = () => {
 
   return (
     <>
-      <img className="logo" alt="logo" src={"#"}></img>
-      <Search placeholder="input search text" onSearch={onSearch} enterButton />
-      <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={items}
-      />
+      <div className="toro">
+        {/* mira si puedes hacer los div aca o en el principal */}
+        <img className="logo" alt="logo" src={"#"}></img>
+        <Search
+          className="bar-search"
+          placeholder="input search text"
+          onSearch={onSearch}
+          enterButton
+        />
+        <Menu
+          onClick={onClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+          items={items}
+        />
+      </div>
     </>
   );
 };

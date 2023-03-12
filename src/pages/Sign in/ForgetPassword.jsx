@@ -14,8 +14,8 @@ export const ForgetPassword = () => {
         <h2>
           Por favor ingrese el correo electrónico para recuperar su contraseña
         </h2>
-        <Input className="InputForget" placeholder={Forget} />
-        <Button className="Forget" type="primary">
+        <Input className="input-forget" placeholder={Forget} />
+        <Button className="btn-forget" type="primary">
           recuperar
         </Button>
       </div>

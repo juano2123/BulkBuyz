@@ -2,7 +2,7 @@ import "../../pages/styles/inicio_sesion.css";
 import { Button } from "antd";
 import InputLogin from "../../shared/components/InputLogin";
 import InputPassword from "../../shared/components/InputPassword";
-import { BarSignInHeader } from "../../shared/BarSignInHeader";
+import { BarSignInHeader } from "../../shared/components/BarSignInHeader";
 
 function InicioSesion() {
   return (

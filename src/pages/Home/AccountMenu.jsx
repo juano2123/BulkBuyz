@@ -21,6 +21,7 @@ const AccountMenu = () => {
 
   return (
     <div className="inicio">
+      {/* aqui podes mejorarla no se  */}
       <div className="menu_bar">
         <MenuBarR />
       </div>

@@ -5,6 +5,7 @@ import "../styles/ProductoDetalleMasterPro.css";
 const ProductDetail = () => {
   return (
     <div className="product_detail">
+      {/* lo mismo de siempre */}
       <div className="menu">
         <MenuBarR />
         <BarCategories />

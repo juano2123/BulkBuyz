@@ -1,4 +1,5 @@
 import MenuBarR from "../../shared/components/MenuBar";
+import "../styles/InfoAccount.css";
 /*
 
 
@@ -8,9 +9,10 @@ import MenuBarR from "../../shared/components/MenuBar";
 const InfoAccount = () => {
   return (
     <div className="infoMenu">
-      <div className="barMenu">
+      <header>
         <MenuBarR />
-      </div>
+      </header>
+
       <div className="account">
         <h1>CUENTA</h1>
       </div>
