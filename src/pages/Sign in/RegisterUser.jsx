@@ -1,6 +1,6 @@
 import Register from "../../shared/components/RegisterInput";
-import "./styles/register_input.css";
-import LOGO from "../images/LOGO.png";
+import "../styles/register_input.css";
+import LOGO from "../../images/LOGO.png";
 import { Button } from "antd";
 import InputPassword from "../../shared/components/InputPassword";
 import InputLogin from "../../shared/components/InputLogin";
