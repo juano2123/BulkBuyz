@@ -86,20 +86,27 @@ const BarCategories = () => {
   };
   return (
     <>
-      <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={items1}
-      />
-      <Button type="text">Sell on BulkBuyz</Button>
+      <div className="menu-categorie">
+        <Menu
+          onClick={onClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+          items={items1}
+        />
+      </div>
+      <div className="helpersss">
+        <Button className="btn-sell " type="text">
+          Sell on BulkBuyz
+        </Button>
 
-      <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={items2}
-      />
+        <Menu
+          className="menu-help"
+          onClick={onClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+          items={items2}
+        />
+      </div>
     </>
   );
 };
