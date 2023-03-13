@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import AccountMenu from "./pages/Home/AccountMenu";
 import reportWebVitals from "./reportWebVitals";
+//import InicioSesion from "./pages/Sign in/InicioSesion";
+//import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

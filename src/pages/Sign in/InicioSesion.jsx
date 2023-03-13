@@ -8,16 +8,27 @@ function InicioSesion() {
   return (
     <div className="Inicio_sesion">
       <div className="Area_login">
-        <BarSignInHeader />
+
+        <div className="Barra_Inicio"> <BarSignInHeader /> </div>
+
         {/* aqui tenes que hacer divs para la zona de la imagen, otro div con el input */}
-        <img className="los" alt="logo" src="#"></img>
+        <div className="Imagen">
+          <div> <img className="los" alt="logo" src="#"></img> </div>
+        </div>
 
         {/* <a>WELCOME</a> */}
+        <div className="Ingresar_datos">
+          <div className="ingresar_Email"> <InputLogin inputName={"Mail"} /> </div>
 
-        <InputLogin inputName={"Mail"} />
-        <InputPassword inputPass={"Password"} />
+          <div className="ingresar_password"> <InputPassword inputPass={"Password"} /> </div>
+        </div>
+        <div className="Boton_incio">
+          <div className="Boton_iniciar"> <Button>inciar </Button> </div>
+        </div>
+
         {/* trata de cuadrar como 3 divs entre login password y el button */}
-        <Button>inciar </Button>
+
+
       </div>
     </div>
   );

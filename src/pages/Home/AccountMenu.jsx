@@ -1,5 +1,5 @@
 import React from "react";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 
 import ProductCard from "../../shared/components/ProductCard";
 import BarCategories from "../../shared/components/BarCategories";
@@ -17,6 +17,15 @@ const AccountMenu = () => {
       name: "Minispeaker",
       price: 430,
     },
+    {
+      name: "Silicon Wristband",
+      price: 0.99,    
+    },
+    {
+      name:"Silicone Phone Case",
+      price: 1.39 ,
+
+    }
   ];
 
   return (
