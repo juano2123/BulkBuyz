@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AccountMenu from "./pages/Home/AccountMenu";
+import ProductDetail from "./pages/Home/ProductDetail";
 import reportWebVitals from "./reportWebVitals";
 //import InicioSesion from "./pages/Sign in/InicioSesion";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
@@ -8,7 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccountMenu />
+    <ProductDetail />
   </React.StrictMode>
 );
 
