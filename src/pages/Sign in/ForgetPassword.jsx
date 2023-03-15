@@ -1,6 +1,8 @@
-import { Button, Input } from "antd";
+import { Button } from "antd";
 import React from "react";
 import { BarSignInHeader } from "../../shared/components/BarSignInHeader";
+import InputPassword from "../../shared/components/InputPassword";
+
 export const ForgetPassword = () => {
   const Forget = () => {};
 
@@ -14,7 +16,13 @@ export const ForgetPassword = () => {
         <h2>
           Por favor ingrese el correo electrónico para recuperar su contraseña
         </h2>
-        <Input className="input-forget" placeholder={Forget} />
+        <div className="input-lastpassword">
+          <updatePassword newpass="" />
+        </div>
+        <div className="input-lastpassword">
+          <updatePassword />
+        </div>
+
         <Button className="btn-forget" type="primary">
           recuperar
         </Button>
