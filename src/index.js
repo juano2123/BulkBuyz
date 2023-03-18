@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import InfoAccount from "./pages/Account/InfoAccount";
+import Uploadphoto from "./pages/Account/Uploadphoto";
 import ProductDetail from "./pages/Home/ProductDetail";
 import reportWebVitals from "./reportWebVitals";
+import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 //import InicioSesion from "./pages/Sign in/InicioSesion";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ProductDetail />
+    <Uploadphoto />
   </React.StrictMode>
 );
 

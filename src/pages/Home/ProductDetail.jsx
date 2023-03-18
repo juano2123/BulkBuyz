@@ -1,5 +1,5 @@
 import BarCategories from "../../shared/components/BarCategories";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 import ProductoDetalleMasterPro from "../../shared/components/ProductoDetalleMasterPro";
 import "../styles/ProductoDetalleMasterPro.css";
 const ProductDetail = () => {

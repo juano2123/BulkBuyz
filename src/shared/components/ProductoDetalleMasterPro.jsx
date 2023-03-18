@@ -32,19 +32,24 @@ const ProductoDetalleMasterPro = () => {
             <span> shiping</span>
             <span> $34.00</span>
           </div>
+          <div className="Total">
           <span> Total</span>
           <span> $40.50</span>
-          <button Chat Now></button>
+          </div>
+          <div className="Botones">
+          <button >Chat Now</button>
+          <button  > Contact Supplier</button>
+          </div>
           <div className="another_box_inner">
+            <div className="nombre">
             <span>Name of Company</span>
             <span>Manufactuer</span>
+            </div>
+            <div>
             <img src="#" alt="" width={40} height={30} />
             <span>CN 1YR</span>
-            <span>Reponse Time</span>
-            <span> 4h </span>
+            </div>
           </div>
-          <button Contact Supplier></button>
-          {/* la verdad son muchos div y me confundo TERMINAR */}
         </div>
       </div>
     </div>
