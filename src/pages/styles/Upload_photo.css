@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  header{
+    background: linear-gradient(#388087, #BADFE7);
+    
+}
+
+body{
+    background-size: 400px;
+    background: #BADFE7;
+}
+
+.toro{
+    display: flex;
+    flex-direction: row;
+    }
+    .bar-search{
+        
+        
+    }

@@ -1,17 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import InfoAccount from "./pages/Account/InfoAccount";
-import Uploadphoto from "./pages/Account/Uploadphoto";
-import ProductDetail from "./pages/Home/ProductDetail";
+import Calificarservicio from "./pages/Account/Calificarservicio";
+//import { Cambiarcontra } from "./pages/Account/Cambiarcontra";
+//import { Cambiarcorreo } from "./pages/Account/Cambiarcorreo";
+//import InfoAccount from "./pages/Account/InfoAccount";
+//import Setquestions from "./pages/Account/Setquestions";
+//import Uploadphoto from "./pages/Account/Uploadphoto";
+//import ProductDetail from "./pages/Home/ProductDetail";
+//import { ForgetPassword } from "./pages/Sign in/ForgetPassword";
 import reportWebVitals from "./reportWebVitals";
-import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
+//import BarNoSearch from "./shared/components/BarNoSearch";
+//import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
+//import Securquestion from "./shared/components/Securquestion"
 //import InicioSesion from "./pages/Sign in/InicioSesion";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Uploadphoto />
+    < Calificarservicio/>
   </React.StrictMode>
 );
 

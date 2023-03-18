@@ -1,5 +1,5 @@
 import MenuBarR from "../../shared/components/menuBar";
-import "../styles/InfoAccount.css";
+import "../styles/Upload_photo.css";
 
 const Uploadphoto = () => {
     return (
