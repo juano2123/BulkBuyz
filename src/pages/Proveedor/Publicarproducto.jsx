@@ -1,7 +1,8 @@
 import React from "react";
 import MenuBarR from "../../shared/components/menuBar";
+import { Button } from "antd/es/radio";
 
-export const Calificarservicio = () => {
+export const Publicarproducto = () => {
 
     return (
         <div className="Publicar_Todo">
@@ -11,19 +12,19 @@ export const Calificarservicio = () => {
 
             <div className="Info_producto">
                 <h1>Public your Product</h1>
-                <span>Include some details</span>
+                <h3>Include some details</h3>
 
-                <small>Brand</small>
-                <small>Contact number (+57) </small>
-                <small>Title of product</small>
-                <small>Description</small>
+                <span>Brand</span>
+                <span>Contact number (+57) </span>
+                <span>Title of product</span>
+                <span>Description</span>
 
-                <span>Set a price</span>
-                <small>Price</small>
+                <h3>Set a price</h3>
+                <span>Price</span>
             </div>
 
             <div className="Upload_photos">
-                <span>Upload up to 10 photos</span>
+                <h3>Upload up to 10 photos</h3>
 
                 {/*Cuadros de fotos aqui*/}
 
@@ -31,8 +32,19 @@ export const Calificarservicio = () => {
             </div>
 
             <div className="Detail_person">
-                <h2>Check your details</h2>
+                <h3>Check your details</h3>
+
+                {/*imagen*/}
+
+                <span> Name </span>
+                <span> Mobile phone number </span>
+                <Button className="btn-forget" type="primary">
+                    Submit
+                </Button>
+
+
             </div>
+
 
         </div>
 
@@ -42,3 +54,4 @@ export const Calificarservicio = () => {
 
     );
 };
+export default Publicarproducto

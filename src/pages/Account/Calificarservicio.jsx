@@ -1,7 +1,8 @@
 import React from "react";
 import MenuBarR from "../../shared/components/menuBar";
 import { Input } from "antd";
-import { Button }from "antd";
+import { Button } from "antd";
+import { StarOutlined, InboxOutlined } from "@ant-design/icons";
 
 export const Calificarservicio = () => {
 
@@ -16,6 +17,12 @@ export const Calificarservicio = () => {
 
             <div className="Input">
                 <h1>Calificar el servicio</h1>
+
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
 
                 {/* Aqui van las estrellas */}
 

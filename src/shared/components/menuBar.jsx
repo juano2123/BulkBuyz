@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 
-// import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
+//import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
   const onSearch = (value = "") => console.log(value);
 

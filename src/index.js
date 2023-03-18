@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Calificarservicio from "./pages/Account/Calificarservicio";
+import Publicarproducto from "./pages/Proveedor/Publicarproducto";
 //import { Cambiarcontra } from "./pages/Account/Cambiarcontra";
 //import { Cambiarcorreo } from "./pages/Account/Cambiarcorreo";
 //import InfoAccount from "./pages/Account/InfoAccount";
@@ -9,6 +10,8 @@ import Calificarservicio from "./pages/Account/Calificarservicio";
 //import ProductDetail from "./pages/Home/ProductDetail";
 //import { ForgetPassword } from "./pages/Sign in/ForgetPassword";
 import reportWebVitals from "./reportWebVitals";
+import BarraAdmin from "./shared/BarraAdmin";
+import MenuBarR from "./shared/components/menuBar";
 //import BarNoSearch from "./shared/components/BarNoSearch";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 //import Securquestion from "./shared/components/Securquestion"
@@ -18,7 +21,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    < Calificarservicio/>
+    < MenuBarR/>
   </React.StrictMode>
 );
 
