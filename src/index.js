@@ -10,18 +10,19 @@ import Publicarproducto from "./pages/Proveedor/Publicarproducto";
 //import ProductDetail from "./pages/Home/ProductDetail";
 //import { ForgetPassword } from "./pages/Sign in/ForgetPassword";
 import reportWebVitals from "./reportWebVitals";
-import BarraAdmin from "./shared/BarraAdmin";
 import MenuBarR from "./shared/components/menuBar";
 //import BarNoSearch from "./shared/components/BarNoSearch";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 //import Securquestion from "./shared/components/Securquestion"
-//import InicioSesion from "./pages/Sign in/InicioSesion";
+import InicioSesion from "./pages/Sign in/InicioSesion";
+import RegisterUser from "./pages/Sign in/RegisterUser";
+import { ForgetPassword } from "./pages/Sign in/ForgetPassword";
 //import ProductoDetalleMasterPro from "./shared/components/ProductoDetalleMasterPro";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    < MenuBarR/>
+    <ForgetPassword />
   </React.StrictMode>
 );
 

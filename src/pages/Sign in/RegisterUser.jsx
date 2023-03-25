@@ -1,5 +1,5 @@
 import Register from "../../shared/components/RegisterInput";
-import "../styles/register_input.css";
+
 import LOGO from "../../images/LOGO.png";
 import { Button } from "antd";
 import InputPassword from "../../shared/components/InputPassword";
@@ -12,9 +12,9 @@ const RegisterUser = () => {
   };
   return (
     <div className="register">
-      <header>
+      <div className="Barra_Inicio">
         <img className="logo" alt="logo" src={LOGO}></img>
-      </header>
+      </div>
       <div className="content">
         <div className="create_user">
           <p>Create your Account</p>

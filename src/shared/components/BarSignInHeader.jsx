@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "antd";
 import LOGO from "../../images/LOGO.png";
+import "../../pages/styles/Principal.css";
 
 export const BarSignInHeader = () => {
   return (
