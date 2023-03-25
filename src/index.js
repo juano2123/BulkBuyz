@@ -22,7 +22,7 @@ import { ForgetPassword } from "./pages/Sign in/ForgetPassword";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ForgetPassword />
+    <InicioSesion />
   </React.StrictMode>
 );
 

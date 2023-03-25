@@ -59,7 +59,17 @@ flex-direction: column;
 .Ingresar_datos h1{
     margin-block-end: 10px;
     align-items: center;
-    font-size: 56px
+    font-size: 56px;
+    color: #323B3D
+    
+}
+.btn_ingresar{
+    margin: 10px;
+    width: 60%;
+    color:#CCF4FC ;
+    background: #65797D;
+    border: 2px solid #323B3D;
+
 }
 
 
