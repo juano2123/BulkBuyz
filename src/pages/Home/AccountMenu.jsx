@@ -1,31 +1,32 @@
 import React from "react";
-import MenuBarR from "../../shared/components/menuBar";
-
-import ProductCard from "../../shared/components/ProductCard";
+import MenuBarR from "../../shared/components/MenuBar";
+// import ProductCard from "../../shared/components/ProductCard";
 import BarCategories from "../../shared/components/BarCategories";
-
 import "../styles/account_menu.css";
+import ProductGrid from "../../shared/components/ProductCard";
 
 const AccountMenu = () => {
   const products = [
     {
       name: "Airpods",
       price: 1200,
-      preview: Image,
+      id: 1,
     },
     {
       name: "Minispeaker",
       price: 430,
+      id: 2,
     },
     {
       name: "Silicon Wristband",
-      price: 0.99,    
+      price: 0.99,
+      id: 3,
     },
     {
-      name:"Silicone Phone Case",
-      price: 1.39 ,
-
-    }
+      name: "Silicone Phone Case",
+      price: 1.39,
+      id: 4,
+    },
   ];
 
   return (
@@ -40,7 +41,7 @@ const AccountMenu = () => {
 
       <div className="card">
         {products.map((product) => {
-          return <ProductCard product={product} />;
+          return <ProductGrid product={product} />;
         })}
       </div>
     </div>

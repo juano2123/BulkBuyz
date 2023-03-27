@@ -89,6 +89,7 @@ const BarCategories = () => {
       <div className="menu-categorie">
         <Menu
           onClick={onClick}
+          style={{ background: "none" }}
           selectedKeys={[current]}
           mode="horizontal"
           items={items1}
@@ -102,6 +103,7 @@ const BarCategories = () => {
         <Menu
           className="menu-help"
           onClick={onClick}
+          style={{ background: "none" }}
           selectedKeys={[current]}
           mode="horizontal"
           items={items2}

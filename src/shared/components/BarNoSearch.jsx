@@ -5,7 +5,7 @@ import { Menu } from "antd";
 
 // import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const BarNoSearch = () => {
- //const onSearch = (value = "") => console.log(value);
+  //const onSearch = (value = "") => console.log(value);
 
   //cambiar las keys
 
@@ -16,10 +16,10 @@ const BarNoSearch = () => {
       children: [
         {
           type: "group",
-          label: "Item 1",
+          label: "supu",
           children: [
             {
-              label: "Option 1",
+              label: "supu",
               key: "setting:1",
             },
             {
@@ -91,10 +91,7 @@ const BarNoSearch = () => {
       <div className="toro">
         {/* mira si puedes hacer los div aca o en el principal */}
         <img className="logo" alt="logo" src={"#"}></img>
-        
-          
-          
-        
+
         <Menu
           onClick={onClick}
           selectedKeys={[current]}

@@ -84,7 +84,7 @@ function InicioSesion() {
               }}
             >
               <span>¿Olvidó su contraseña?</span>
-              <Button className="btn_ingresar"  type="primary" htmlType="submit">
+              <Button className="btn_ingresar" type="primary" htmlType="submit">
                 Ingresar
               </Button>
             </Form.Item>

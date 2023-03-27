@@ -7,7 +7,7 @@ export const ForgetPassword = () => {
   const Forget = () => {};
 
   return (
-    <div className="todito">
+    <>
       <div className="arriba">
         <BarSignInHeader />
       </div>
@@ -26,6 +26,6 @@ export const ForgetPassword = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </>
   );
 };

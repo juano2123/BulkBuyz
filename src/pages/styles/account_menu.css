@@ -1,34 +1,32 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+.toro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* centra verticalmente */
+}
 
-  }
+.bar-search {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  font-size: 24px;
+}
+.btn-laterales {
+  background: none;
+}
 
- 
-  .toro{
-    display: flex;
-    flex-direction: row;
+.bar_categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* añadido para alinear al inicio y final */
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  }
-  .bar_categories {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* añadido para alinear al inicio y final */
-  }
-  
-  .helpersss {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end; /* añadido para alinear al final */
-    
-  }
-  .btn-sell{
-  }
-
-
-
-
-
-
+.helpersss {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

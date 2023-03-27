@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(#388087, #badfe7);
+}
+
+body {
+  /* background-size: 400px; */
+  background: #badfe7;
+}
+.logo {
+  margin-top: 10px;
+  height: 60px;
+  width: 80 px;
+}

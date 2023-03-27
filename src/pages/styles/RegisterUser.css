@@ -1,0 +1,18 @@
+.content-register {
+  display: flex;
+  flex-direction: column;
+}
+.form-hdp {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 80px 80px; /*acomodar*/
+  background-color: #999999; /*acomodar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-register {
+  justify-content: center;
+  align-items: center;
+}
