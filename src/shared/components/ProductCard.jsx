@@ -20,12 +20,6 @@ const ProductCard = (props) => {
         <Col className="gutter-row" span={8} style={{ padding: "0 8px" }}>
           <div style={style}>col-8</div>
         </Col>
-        <Col className="gutter-row" span={8} style={{ padding: "0 8px" }}>
-          <div style={style}>col-8</div>
-        </Col>
-        <Col className="gutter-row" span={8} style={{ padding: "0 8px" }}>
-          <div style={style}>col-8</div>
-        </Col>
       </Row>
     </>
 

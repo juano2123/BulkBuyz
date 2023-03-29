@@ -2,6 +2,9 @@ import Search from "antd/es/transfer/search";
 import React, { useState } from "react";
 import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
+import LOGO from "../../images/LOGO.png";
+import styles from "../../pages/styles/Principal.module.css";
+import styleBar from "../../pages/styles/BarMenu.module.css";
 
 // import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const BarNoSearch = () => {
@@ -88,13 +91,14 @@ const BarNoSearch = () => {
 
   return (
     <>
-      <div className="toro">
+      <div className={styleBar.toro}>
         {/* mira si puedes hacer los div aca o en el principal */}
-        <img className="logo" alt="logo" src={"#"}></img>
+        <img className={styles.logo} alt="logo" src={LOGO}></img>
 
         <Menu
           onClick={onClick}
           selectedKeys={[current]}
+          style={{ background: "none" }}
           mode="horizontal"
           items={items}
         />

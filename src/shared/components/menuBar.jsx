@@ -4,6 +4,7 @@ import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import styles from "../../pages/styles/Principal.module.css";
 import LOGO from "../../images/LOGO.png";
+import styleBar from "../../pages/styles/BarMenu.module.css";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
@@ -63,12 +64,12 @@ const MenuBarR = () => {
 
   return (
     <>
-      <div className="toro">
+      <div className={styleBar.toro}>
         <div className="img-logo">
           {/* mira si puedes hacer los div aca o en el principal */}
           <img className={styles.logo} alt="logo" src={LOGO}></img>
         </div>
-        <div className="bar-search">
+        <div className={styleBar.bar_search}>
           <Search
             placeholder="input search text"
             onSearch={onSearch}

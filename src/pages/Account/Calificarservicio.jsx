@@ -1,50 +1,43 @@
-import React from "react";
-import MenuBarR from "../../shared/components/menuBar";
-import { Input } from "antd";
+import React, { useState } from "react";
+import MenuBarR from "../../shared/components/MenuBar";
+import { Input, Rate } from "antd";
 import { Button } from "antd";
-import { StarOutlined, InboxOutlined } from "@ant-design/icons";
+import "../styles/CalificarServicio.css";
 
-export const Calificarservicio = () => {
+export const CalificarServicio = () => {
+  const { TextArea } = Input;
+  const [value, setValue] = useState();
+  return (
+    <div className="Serivcio_todo">
+      <header>
+        <MenuBarR />
+      </header>
 
-    const { TextArea } = Input;
+      <div className="input">
+        <div className="todi">
+          <h1>Calificar el servicio</h1>
+          <br></br>
+          <span>
+            <Rate onChange={setValue} value={value} />
+          </span>
 
+          {/* Aqui van las estrellas */}
 
-    return (
-        <div className="Serivcio_todo">
-            <div className="Barra_A">
-                <MenuBarR />
-            </div>
+          <>
+            <TextArea
+              style={{ width: "90%", marginTop: "30px" }}
+              rows={4}
+              placeholder="Type your opinion here..."
+            />
+            <br />
+          </>
 
-            <div className="Input">
-                <h1>Calificar el servicio</h1>
-
-                <StarOutlined />
-                <StarOutlined />
-                <StarOutlined />
-                <StarOutlined />
-                <StarOutlined />
-
-                {/* Aqui van las estrellas */}
-
-                <>
-                    <TextArea rows={4} placeholder="Type your opinion here..." />
-                    <br />
-
-
-                </>
-                <Button className="btn-forget" type="primary">
-                    Submit
-                </Button>
-
-
-
-            </div>
-
-
+          <Button className="btn-submit" type="primary">
+            Submit
+          </Button>
         </div>
-
-
-
-    );
+      </div>
+    </div>
+  );
 };
-export default Calificarservicio;
+export default CalificarServicio;

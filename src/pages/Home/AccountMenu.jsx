@@ -3,7 +3,7 @@ import MenuBarR from "../../shared/components/MenuBar";
 // import ProductCard from "../../shared/components/ProductCard";
 import BarCategories from "../../shared/components/BarCategories";
 import "../styles/account_menu.css";
-import ProductGrid from "../../shared/components/ProductCard";
+import ProductCard from "../../shared/components/ProductCard";
 
 const AccountMenu = () => {
   const products = [
@@ -41,7 +41,7 @@ const AccountMenu = () => {
 
       <div className="card">
         {products.map((product) => {
-          return <ProductGrid product={product} />;
+          return <ProductCard product={product} />;
         })}
       </div>
     </div>

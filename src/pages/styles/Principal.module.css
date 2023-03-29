@@ -6,9 +6,14 @@
 header {
   background: linear-gradient(#388087, #badfe7);
 }
+html {
+  height: 100%;
+}
 
 body {
   /* background-size: 400px; */
+  height: 100%;
+
   background: #badfe7;
 }
 .logo {

@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import AccountMenu from "./pages/Home/AccountMenu";
+import CalificarServicio from "./pages/Account/CalificarServicio";
+// import { CambiarContra } from "./pages/Account/Cambiarcontra";
+// import AccountMenu from "./pages/Home/AccountMenu";
+// import AccountMenu from "./pages/Home/AccountMenu";
+// import product_detail from "./pages/Home/ProductDetail";
 
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccountMenu />
+    <CalificarServicio />
   </React.StrictMode>
 );
 
