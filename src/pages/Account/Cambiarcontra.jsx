@@ -37,6 +37,7 @@ export const CambiarContra = () => {
             <Form.Item
               label="Password"
               name="password"
+              
               rules={[
                 {
                   required: true,

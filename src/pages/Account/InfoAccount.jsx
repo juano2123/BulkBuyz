@@ -1,4 +1,4 @@
-import MenuBarR from "../../shared/components/menuBar";
+import MenuBarR from "../../shared/components/MenuBar";
 import "../styles/InfoAccount.css";
 /*
 
