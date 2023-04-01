@@ -1,78 +1,67 @@
-    
-.todo-menos-header{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
+.todo-menos-header {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
-    
-    .todo-menos-header{
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    
-    
-  }
-
-
-.logo{
-    margin-top: 10px;
-    height: 60px;
-    width: 80 px;
-}
-
-
-
-.btn-register{
-margin-top: 15px ;
-margin-right: 15px;
-float: right;
-}
-
-.btn-login{
-    float: right;
-    margin-top: 15px ;
-    margin-right: 10px;
-    
-}
-
-
-.Area_login{
-display: flex;
-flex-direction: column;
-}
-.Area_login a{
-    font-size: 60px;
-    margin-top: 100px;
-}
-
-.Ingresar_datos{
+  .todo-menos-header {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
     align-items: center;
-
-}
-.Ingresar_datos h1{
-    margin-block-end: 10px;
+  }
+  .Imagen {
+    display: flex;
     align-items: center;
-    font-size: 56px;
-    color: #323B3D
-    
+  }
 }
-.btn_ingresar{
-    margin: 10px;
-    width: 60%;
-    color:#CCF4FC ;
-    background: #65797D;
-    border: 2px solid #323B3D;
-
+.Imagen {
 }
 
+.logo {
+  margin-top: 10px;
+  height: 60px;
+  width: 80 px;
+}
 
+.btn-register {
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+}
 
-    
+.btn-login {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.Area_login {
+  display: flex;
+  flex-direction: column;
+}
+.Area_login a {
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.Ingresar_datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+.Ingresar_datos h1 {
+  margin-block-end: 10px;
+  align-items: center;
+  font-size: 56px;
+  color: #323b3d;
+}
+.btn_ingresar {
+  margin: 10px;
+  width: 60%;
+  color: #ccf4fc;
+  background: #65797d;
+  border: 2px solid #323b3d;
+}
