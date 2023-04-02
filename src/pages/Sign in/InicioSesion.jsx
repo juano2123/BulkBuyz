@@ -1,8 +1,8 @@
 import "../../pages/styles/inicio_sesion.css";
-import "../../pages/styles/Principal.css";
 import { BarSignInHeader } from "../../shared/components/BarSignInHeader";
 import { Button, Checkbox, Form, Input } from "antd";
 import ImgRef from "../../images/David-Castro.jpg";
+import LoginForm from "../../shared/components/InputLogin";
 
 function InicioSesion() {
   return (
@@ -24,7 +24,8 @@ function InicioSesion() {
         {/* <a>WELCOME</a> */}
         <div className="Ingresar_datos">
           <h1>BIENVENIDO</h1>
-          <Form
+          <LoginForm />
+          {/* <Form 
             name="basic"
             labelCol={{
               span: 8,
@@ -88,7 +89,7 @@ function InicioSesion() {
                 Ingresar
               </Button>
             </Form.Item>
-          </Form>
+          </Form>*/}
         </div>
       </div>
     </div>
