@@ -13,12 +13,15 @@ import reportWebVitals from "./reportWebVitals";
 // import InfoAccount from "./pages/Account/InfoAccount";
 import InicioSesion from "./pages/Sign in/InicioSesion";
 import InfoAccount from "./pages/Account/InfoAccount";
+import MensajeP from "./pages/Proveedor/MensajeP";
+import LogInadmin from "./pages/Administrador/LogInadmin";
 import MensajeC from "./pages/Account/MensajeC";
+import Publicarproducto from "./pages/Proveedor/Publicarproducto";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <MensajeC />
+    <Publicarproducto />
   </React.StrictMode>
 );
 

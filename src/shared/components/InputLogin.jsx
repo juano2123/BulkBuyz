@@ -92,7 +92,9 @@ const LoginForm = () => {
           span: 16,
         }}
       >
-        <span>¿Olvidó su contraseña?</span>
+        <Button type="link" >
+          ¿Olvidó su contraseña?
+        </Button>
         <Button className="btn_ingresar" onClick={handleSubmit}>
           Ingresar
         </Button>
