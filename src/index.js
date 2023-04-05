@@ -12,11 +12,13 @@ import reportWebVitals from "./reportWebVitals";
 
 // import InfoAccount from "./pages/Account/InfoAccount";
 import InicioSesion from "./pages/Sign in/InicioSesion";
+import InfoAccount from "./pages/Account/InfoAccount";
+import MensajeC from "./pages/Account/MensajeC";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <InicioSesion />
+    <MensajeC />
   </React.StrictMode>
 );
 
