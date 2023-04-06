@@ -1,26 +1,23 @@
 import React from "react";
-import MenuBarR from "../../shared/components/menuBar";
-import { Button } from "antd/es/radio";
+import MenuBarR from "../../shared/components/MenuBar";
+import "../styles/MensajeCliente.css";
+
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
 
 export const MensajeC = () => {
 
     return (
 
-        <div className="Mensajec_todo">
-            <div className="Barra_A">
-                <MenuBarR />
+        <div className="Mensaje_todo">
+            <div className="Menu_Bar">
+                
             </div>
-
-
         </div>
-
-
-
-
-
-
 
     );
 
 };
-export default MensajeC
+export default MensajeC;
+
+

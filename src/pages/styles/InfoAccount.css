@@ -15,12 +15,70 @@ body{
     background: #BADFE7;
 }
  */
-.toro{
+ 
+
+.todito {
     display: flex;
+
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding:  5% 5% 0% 10%; 
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .account {
+
+ 
+    text-align: center;
+    align-items: center;
+    
+    height: 20vh;
+    flex-basis: 10%;
+  }
+
+
+.information_big {
+    margin-top: 40px;
     flex-direction: row;
-    }
-    .bar-search{
-        
-        
-    }
+    flex-basis: 50%;
+
+    
+}
+
+
+
+.information_1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+
+    
+}
+
+
+.information_2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+    
+  
+    
+  }
+  
+  .left {
+    flex-basis: 50%; /* Establece el ancho de la columna 1 al 50% del ancho del contenedor */
+    
+  }
+  
+  .right {
+    flex-basis: 50%; /* Establece el ancho de la columna 2 al 50% del ancho del contenedor */
+  }
+  
+
 

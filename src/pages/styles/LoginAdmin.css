@@ -1,0 +1,26 @@
+.Todo_logA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+  .inputA {
+    text-align: center;
+  }
+
+  .BotonA{
+      margin: 10px;
+  width: 60%;
+  color: #ccf4fc;
+  background: #65797d;
+
+  }
+
+.texto{
+    color: #65797d ;
+  font-family: Arial, sans-serif;
+}
+  
+  
