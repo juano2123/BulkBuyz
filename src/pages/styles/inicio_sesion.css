@@ -14,8 +14,21 @@
     display: flex;
     align-items: center;
   }
+  /* 
+  .form-item-password {
+    width: 100px;
+  } */
 }
+
 .Imagen {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.img-img-ref {
+  max-width: 50%;
+  height: auto;
 }
 
 .logo {

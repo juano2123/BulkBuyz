@@ -13,3 +13,10 @@
   flex-direction: row;
   align-items: center;
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

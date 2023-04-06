@@ -10,23 +10,25 @@ const AccountMenu = () => {
     {
       name: "Airpods",
       price: 1200,
-      id: 1,
+      key: 1,
     },
     {
       name: "Minispeaker",
       price: 430,
-      id: 2,
+      key: 2,
     },
     {
       name: "Silicon Wristband",
       price: 0.99,
-      id: 3,
+      key: 3,
     },
     {
       name: "Silicone Phone Case",
       price: 1.39,
-      id: 4,
+      key: 4,
     },
+    { name: "sds Phone Case", price: 1.39, key: 5 },
+    { name: "Silicone Phone ssad", price: 1.39, key: 5 },
   ];
 
   return (
@@ -40,8 +42,8 @@ const AccountMenu = () => {
       </div>
 
       <div className="card">
-        {products.map((product) => {
-          return <ProductCard product={product} />;
+        {products.map((product, index) => {
+          return <ProductCard key={index} product={product} />;
         })}
       </div>
     </div>

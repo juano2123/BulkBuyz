@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import usersData from "../../json users/users.json";
 import { Button, Checkbox, Form, Input } from "antd";
+import { useNavigate } from "react-router-dom";
 
-const LoginForm = () => {
+const InputLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -21,8 +24,7 @@ const LoginForm = () => {
       setErrorMessage("Contraseña incorrecta");
     } else {
       setErrorMessage("");
-      alert("Inicio de sesión exitoso");
-      console.log("melo caramelo");
+      navigate("/");
     }
   };
 
@@ -63,6 +65,7 @@ const LoginForm = () => {
         label="Password"
         type="password"
         value={password}
+        className="form-item-password"
         onChange={(event) => setPassword(event.target.value)}
         name="password"
         rules={[
@@ -102,4 +105,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default InputLogin;
