@@ -38,7 +38,7 @@ const InputLogin = () => {
         span: 16,
       }}
       style={{
-        width: 800,
+        width: "auto",
       }}
       initialValues={{
         remember: true,
@@ -95,9 +95,7 @@ const InputLogin = () => {
           span: 16,
         }}
       >
-        <Button type="link" >
-          ¿Olvidó su contraseña?
-        </Button>
+        <Button type="link">¿Olvidó su contraseña?</Button>
         <Button className="btn_ingresar" onClick={handleSubmit}>
           Ingresar
         </Button>

@@ -20,14 +20,14 @@
   } */
 }
 
-.Imagen {
+/* .Imagen {
   display: flex;
   align-items: center;
   width: auto;
-}
+} */
 
 .img-img-ref {
-  max-width: 50%;
+  /* max-width: 50%; */
   height: auto;
 }
 

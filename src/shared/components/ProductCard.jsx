@@ -1,4 +1,4 @@
-import { Card, Col, Divider, Row } from "antd";
+import { Card } from "antd";
 import React from "react";
 
 const ProductCard = (props) => {
@@ -7,21 +7,16 @@ const ProductCard = (props) => {
       <Card
         title={props.product.name}
         bordered={false}
-        style={{ width: 300, color: "black", margin: "1rem" }}
+        style={{
+          width: 300,
+          color: "black",
+          margin: "1rem",
+          background: "none",
+        }}
       >
         <p>{props.product.price}</p>
       </Card>
     </>
-
-    /*
-    <Card
-      title={props.product.name}
-      bordered={false}
-      style={{ width: 300, color: "black" }}
-    >
-      <p>{props.product.price}</p>
-    </Card>
-    */
   );
 };
 export default ProductCard;
