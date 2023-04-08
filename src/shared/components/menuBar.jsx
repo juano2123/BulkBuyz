@@ -5,11 +5,15 @@ import { Menu } from "antd";
 import styles from "../../pages/styles/Principal.module.css";
 import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
+import { useNavigate } from "react-router-dom";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
   const onSearch = (value = "") => console.log(value);
-
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/");
+  };
   //cambiar las keys
 
   const items = [
@@ -66,8 +70,12 @@ const MenuBarR = () => {
     <>
       <div className={styleBar.toro}>
         <div className="img-logo">
-          {/* mira si puedes hacer los div aca o en el principal */}
-          <img className={styles.logo} alt="logo" src={LOGO}></img>
+          <img
+            className={styles.logo}
+            alt="logo"
+            src={LOGO}
+            onClick={handleClick}
+          ></img>
         </div>
         <div className={styleBar.bar_search}>
           <Search

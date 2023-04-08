@@ -1,4 +1,4 @@
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import React from "react";
 import AccountMenu from "../pages/Home/AccountMenu";
 import InicioSesion from "../pages/Sign in/InicioSesion";

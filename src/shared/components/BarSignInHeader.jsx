@@ -6,16 +6,17 @@ import { useNavigate } from "react-router-dom";
 
 export const BarSignInHeader = () => {
   const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/register");
+  };
   return (
     <div className="head">
       {/* mira si puedes mejorar esta parte */}
       <header>
-        <img className={styles.logo} alt="logo" src={LOGO}></img>
-        <Button
-          className="btn-login"
-          type="primary"
-          onClick={() => navigate("/register")}
-        >
+        <a href={() => navigate("/")}>
+          <img className={styles.logo} alt="logo" src={LOGO}></img>
+        </a>
+        <Button className="btn-login" type="primary" onClick={handleClick}>
           login
         </Button>
         <Button className="btn-register" type="primary">
