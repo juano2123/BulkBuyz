@@ -1,0 +1,11 @@
+import React, { useState } from "react";
+import { UserContext } from " ./UserContext";
+const user = {};
+export const UserProvider = ({ children }) => {
+  const [user, setuser] = useState();
+  return (
+    <UserContext.Provider value={{ user, setuser }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
