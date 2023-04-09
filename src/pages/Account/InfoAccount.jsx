@@ -19,7 +19,8 @@ const InfoAccount = () => {
         <div className="account">
           <h1>CUENTA</h1>
         </div>
-       
+        <div className="Information">
+          <div className="masGrande">
           <div className="information_big">
             <Space wrap size={16}>
 
@@ -35,8 +36,10 @@ const InfoAccount = () => {
 
         
           <div className="information_1">
+            <div className="info1">
             <span>Your member id:</span>
             <span> A4543tfwfee</span>
+            </div>
             <div className="info2">
               <span>Email:</span>
               <span> example@gmail.com</span>
@@ -45,6 +48,7 @@ const InfoAccount = () => {
               <span>Telephone:</span>
               <span> 302555555</span>
             </div>
+          </div>
           </div>
         
 
@@ -78,6 +82,7 @@ const InfoAccount = () => {
               <Button type="link" >
                 Set security questions
               </Button>
+              </div>
               </div>
 
             </div>

@@ -277,7 +277,7 @@ const Register = () => {
         {...tailFormItemLayout}
       >
         <Checkbox>
-          I have read the <a href="">agreement</a>
+          I have read the <a href="/login">agreement</a>
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>

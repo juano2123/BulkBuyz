@@ -16,21 +16,28 @@ body{
 }
  */
  
-
+.infoMenu{
+  height: 100%;
+   
+  
+}
 .todito {
     display: flex;
+    flex-direction:column ;
+    align-content: center;
+     
+
+ 
 
 
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding:  5% 5% 0% 10%; 
-    background-color: white; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
   }
+.Information{
+  border: 2px solid #323B3D;
+  border-radius: 9px;
+  color: #323B3D;
+   margin-top: 1%;
+}
 
   .account {
 
@@ -40,13 +47,24 @@ body{
     
     height: 20vh;
     flex-basis: 10%;
+    margin-top: 5%;
   }
+.masGrande{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 
+  border-bottom: 1px solid black; 
+
+
+}
 
 .information_big {
     margin-top: 40px;
     flex-direction: row;
     flex-basis: 50%;
+    
 
     
 }
@@ -57,18 +75,44 @@ body{
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+   
+    
+    
+
 
     
 }
 
 
 .information_2 {
+  margin-top: 3%;
   display: flex;
   flex-direction: row;
   text-align: center;
+
+
+
+
     
   
     
+  }
+
+  .button1{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    margin-top: 3%;
+
+  }
+  .boton2{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    margin-top: 3%;
+
   }
   
   .left {
