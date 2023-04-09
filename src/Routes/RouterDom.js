@@ -6,6 +6,7 @@ import { RegisterUser } from "../pages/Sign in/RegisterUser";
 import InfoAccount from "../pages/Account/InfoAccount"
 import LogInadmin from "../pages/Administrador/LogInadmin"
 import Publicarproducto from "../pages/Proveedor/Publicarproducto";
+import MiPerfil from "../pages/Account/MiPerfii";
 const RoterDom = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const RoterDom = () => {
         <Route path="/Infoaccount" element={<InfoAccount />} />
         <Route path="/loginadmin" element={<LogInadmin />} />
         <Route path="/publicarProducto" element={<Publicarproducto/>} />
+        <Route path="/MiPerfil" element={<MiPerfil/>} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </>
