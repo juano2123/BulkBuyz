@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Button, Cascader, Checkbox, Form, Input, Radio, Select } from "antd";
+import React from "react";
+import { Button, Checkbox, Form, Input, Radio, Select } from "antd";
+import { UserContext } from "../../contex/UserContext";
+import { useContext } from "react";
 
 const { Option } = Select;
 const Register = () => {
@@ -34,10 +36,12 @@ const Register = () => {
     },
   };
   const [form] = Form.useForm();
-  const [componentDisabled, setComponentDisabled] = useState(false);
-  console.log(componentDisabled);
+  const { setUser } = useContext(UserContext);
+  // const [componentDisabled, setComponentDisabled] = useState(false); //para poder desabilitar el las opciones de comprador,vendedor...
+  // console.log(componentDisabled);
 
   const onFinish = (values) => {
+    setUser(values);
     console.log("Received values of form: ", values);
   };
   const prefixSelector = (
@@ -86,7 +90,7 @@ const Register = () => {
       </Form.Item>
 
       <Form.Item
-        name="last name"
+        name="lastname"
         label="Last name"
         rules={[
           {
@@ -109,16 +113,16 @@ const Register = () => {
         </Radio.Group>
       </Form.Item>
       <Form.Item
-        name="name_company"
+        name="namecompany"
         label="name company"
-        disabled={componentDisabled}
+        // disabled={componentDisabled}
         rules={[
           {
             type: "string",
             message: "The input is not valid",
           },
           {
-            required: true,
+            required: false,
             message: "Please input your name company",
           },
         ]}
@@ -127,7 +131,7 @@ const Register = () => {
       </Form.Item>
       <Form.Item
         name="id "
-        label="ID"
+        label="id"
         tooltip="Id propio o de la empresa"
         rules={[
           {
@@ -238,7 +242,6 @@ const Register = () => {
         ]}
       >
         <Input
-          addon
           Before={prefixSelector}
           style={{
             width: "100%",

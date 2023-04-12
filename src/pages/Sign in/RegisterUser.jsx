@@ -1,8 +1,8 @@
-import { useState } from "react";
 import LOGO from "../../images/LOGO.png";
 import styles from "../../pages/styles/Principal.module.css";
 import "../styles/RegisterUser.css";
 import Register from "../../shared/components/RegisterInput";
+import { UserProvider } from "../../contex/UserProvider";
 
 export const RegisterUser = () => {
   return (
@@ -13,7 +13,9 @@ export const RegisterUser = () => {
       <div className="content-register">
         <h1>Crea una cuenta</h1>
         <div className="form-hdp">
-          <Register />
+          <UserProvider>
+            <Register />
+          </UserProvider>
         </div>
       </div>
     </div>

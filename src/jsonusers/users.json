@@ -3,14 +3,14 @@
     {
       "id": 1,
       "name": "juan",
-      "lassname": "perlaza",
+      "lastname": "perlaza",
       "username": "juanoP21",
       "password": "12345"
     },
     {
       "id": 2,
       "name": "tati",
-      "lassname": "espi",
+      "lastname": "espi",
       "username": "tati123",
       "password": "4321"
     }

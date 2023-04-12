@@ -13,13 +13,13 @@ export const BarSignInHeader = () => {
     <div className="head">
       {/* mira si puedes mejorar esta parte */}
       <header>
-        <a href={() => navigate("/")}>
+        <a href={"/"}>
           <img className={styles.logo} alt="logo" src={LOGO}></img>
         </a>
-        <Button className="btn-login" type="primary" onClick={handleClick}>
+        <Button className="btn-login" type="primary">
           login
         </Button>
-        <Button className="btn-register" type="primary">
+        <Button className="btn-register" type="primary" onClick={handleClick}>
           Register
         </Button>
       </header>
