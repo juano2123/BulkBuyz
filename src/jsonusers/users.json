@@ -5,14 +5,16 @@
       "name": "juan",
       "lastname": "perlaza",
       "username": "juanoP21",
-      "password": "12345"
+      "password": "12345",
+      "isLoggedIn": true
     },
     {
       "id": 2,
       "name": "tati",
       "lastname": "espi",
       "username": "tati123",
-      "password": "4321"
+      "password": "4321",
+      "isLoggedIn": true
     }
   ]
 }

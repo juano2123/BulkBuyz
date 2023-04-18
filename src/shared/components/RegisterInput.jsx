@@ -36,12 +36,12 @@ const Register = () => {
     },
   };
   const [form] = Form.useForm();
-  const { setUser } = useContext(UserContext);
+  const { SetUser } = useContext(UserContext);
   // const [componentDisabled, setComponentDisabled] = useState(false); //para poder desabilitar el las opciones de comprador,vendedor...
   // console.log(componentDisabled);
 
   const onFinish = (values) => {
-    setUser(values);
+    SetUser(values);
     console.log("Received values of form: ", values);
   };
   const prefixSelector = (

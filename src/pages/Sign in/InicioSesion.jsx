@@ -18,6 +18,7 @@ function InicioSesion() {
         {/* <a>WELCOME</a> */}
         <div className="Ingresar_datos">
           <h1>BIENVENIDO</h1>
+
           <InputLogin />
         </div>
       </div>

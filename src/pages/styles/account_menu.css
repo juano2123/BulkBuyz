@@ -20,5 +20,8 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-img-product-detail {
+.ant-card-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

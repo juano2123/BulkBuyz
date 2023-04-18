@@ -23,6 +23,7 @@ const ProductCard = (props) => {
             <img
               className="img-product-detail"
               alt="example"
+              style={{ width: "260px", height: "260px", marginTop: "1em" }}
               src={props.product.image}
             />
           }

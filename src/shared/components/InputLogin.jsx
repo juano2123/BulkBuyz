@@ -2,13 +2,23 @@ import React, { useState } from "react";
 import usersData from "../../jsonusers/users.json";
 import { Button, Checkbox, Form, Input } from "antd";
 import { useNavigate } from "react-router-dom";
+// import { UserContext } from "../../contex/UserContext";
+// import { useContext } from "react";
+
+import { useDispatch } from " react-redux";
+import { setUsers } from "../../../Redux/slice/Slice";
 
 const InputLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  const dispatch = useDispatch();
+  // const { SetUser } = useContext(UserContext);
   const navigate = useNavigate();
+
+  const Setuser = (us) => {
+    dispatch(setUsers({ us }));
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -16,7 +26,7 @@ const InputLogin = () => {
     // Buscamos el usuario en el archivo JSON
     const user = usersData.users.find((u) => u.username === username);
 
-    console.log(user);
+    // console.log(user);
 
     if (!user) {
       setErrorMessage("Usuario no encontrado");
@@ -24,6 +34,10 @@ const InputLogin = () => {
       setErrorMessage("Contraseña incorrecta");
     } else {
       setErrorMessage("");
+      // upDatevalu(user)
+      Setuser(user);
+      console.log(`se inicio bien ${user.name}`);
+
       navigate("/");
     }
   };

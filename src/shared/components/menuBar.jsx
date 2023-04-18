@@ -1,19 +1,29 @@
 import Search from "antd/es/transfer/search";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import styles from "../../pages/styles/Principal.module.css";
 import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../contex/UserContext";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
   const onSearch = (value = "") => console.log(value);
   const navigate = useNavigate();
+  const { user } = useContext(UserContext);
+  console.log(user);
   const handleClick = () => {
     navigate("/");
   };
+
+  const takename = () => {
+    const Name = user.name;
+    console.log(Name);
+    return Name;
+  };
+
   //cambiar las keys
 
   const items = [
@@ -23,7 +33,7 @@ const MenuBarR = () => {
       children: [
         {
           type: "group",
-          label: `Hi,${""}`,
+          label: `Hi, ${takename()}`,
           children: [
             {
               label: "Account",

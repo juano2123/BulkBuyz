@@ -12,11 +12,13 @@ const RoterDom = () => {
     <>
       <Routes>
         <Route path="/" element={<AccountMenu />} />
-        <Route path="/login" element={<InicioSesion />} />
+        <Route path="/login" element={<InicioSesion />} /> {/* este ya ta */}
         <Route path="/register" element={<RegisterUser />} />
-        <Route path="/Infoaccount" element={<InfoAccount />} />
+        {/* este esta a media, falta el redux, para poder meter la info*/}
+        <Route path="/infoaccount" element={<InfoAccount />} />
         <Route path="/loginadmin" element={<LogInadmin />} />
         <Route path="/publicarProducto" element={<Publicarproducto />} />
+        <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
