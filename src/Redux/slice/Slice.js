@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import users from "../../src/jsonusers/users.json";
+import users from "../../jsonusers/users.json";
 
 const initialState = { users: [], currentUser: null, isLoggedIn: false };
 
@@ -10,7 +10,7 @@ const userSlice = createSlice({
     setUsers: (state, action) => {
       state.users = action.payload;
     },
-    login: (state, action) => {
+    /*login: (state, action) => {
       const { username, password } = action.payload;
       const user = users.find(
         (user) => user.username === username && user.password === password
@@ -22,7 +22,7 @@ const userSlice = createSlice({
       } else {
         throw new Error("Invalid username or password");
       }
-    },
+    },*/
     logout: (state) => {
       state.currentUser = null;
       state.isLoggedIn = false;

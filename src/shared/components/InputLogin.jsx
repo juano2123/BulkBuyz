@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 // import { UserContext } from "../../contex/UserContext";
 // import { useContext } from "react";
 
-import { useDispatch } from " react-redux";
-import { setUsers } from "../../../Redux/slice/Slice";
+import { useDispatch } from "react-redux";
+import { setUsers } from "../../Redux/slice/Slice";
 
 const InputLogin = () => {
   const [username, setUsername] = useState("");
@@ -15,10 +15,6 @@ const InputLogin = () => {
   const dispatch = useDispatch();
   // const { SetUser } = useContext(UserContext);
   const navigate = useNavigate();
-
-  const Setuser = (us) => {
-    dispatch(setUsers({ us }));
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -35,7 +31,7 @@ const InputLogin = () => {
     } else {
       setErrorMessage("");
       // upDatevalu(user)
-      Setuser(user);
+      dispatch(setUsers({ user }));
       console.log(`se inicio bien ${user.name}`);
 
       navigate("/");

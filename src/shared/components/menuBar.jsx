@@ -6,23 +6,21 @@ import styles from "../../pages/styles/Principal.module.css";
 import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../contex/UserContext";
+import { useSelector } from "react-redux";
+// import { UserContext } from "../../contex/UserContext";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
   const onSearch = (value = "") => console.log(value);
   const navigate = useNavigate();
-  const { user } = useContext(UserContext);
-  console.log(user);
+
   const handleClick = () => {
     navigate("/");
   };
 
-  const takename = () => {
-    const Name = user.name;
-    console.log(Name);
-    return Name;
-  };
+  const Name = useSelector((state) => state.user.value);
+
+  console.log(Name);
 
   //cambiar las keys
 
@@ -33,7 +31,7 @@ const MenuBarR = () => {
       children: [
         {
           type: "group",
-          label: `Hi, ${takename()}`,
+          label: `Hi, ${""}`,
           children: [
             {
               label: "Account",
