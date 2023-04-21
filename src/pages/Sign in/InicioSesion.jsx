@@ -1,6 +1,6 @@
 import "../../pages/styles/inicio_sesion.css";
 import { BarSignInHeader } from "../../shared/components/BarSignInHeader";
-import ImgRef from "../../images/David-Castro.jpg";
+import ImgRef from "../../images/login.jpg";
 import InputLogin from "../../shared/components/InputLogin";
 
 function InicioSesion() {

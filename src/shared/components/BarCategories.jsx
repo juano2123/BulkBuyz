@@ -7,38 +7,55 @@ const BarCategories = () => {
 
   const items1 = [
     {
+      
       label: "Categories",
       key: "SubAccount",
       icon: <UserOutlined />,
       children: [
         {
           type: "group",
-          label: "Item 1",
+         
           children: [
             {
-              label: "Option 1",
+              label: "Consumer Electronics / Home Appliances",
               key: "setting:1",
             },
             {
-              label: "Option 2",
+              label: "Apparel / Fashion Accessories / Timepieces, Jewelry, Eyewear",
               key: "setting:2",
             },
-          ],
-        },
-        {
-          type: "group",
-          label: "Item 2",
-          children: [
             {
-              label: "Option 3",
-              key: "setting:3",
+              label: "Home & Garden / Furniture / Pet Supplies",
+              key: "setting:2",
             },
             {
-              label: "Option 4",
-              key: "setting:4",
+              label: "Beauty / Personal Care & Household Cleaning / Health & Medical",
+              key: "setting:2",
             },
+            {
+              label: "Sports & Entertainment / Toys & Hobbies / Gifts & Crafts",
+              key: "setting:2",
+            },
+            {
+              label: "Luggage, Bags & Cases/ Shoes & Accessories",
+              key: "setting:2",
+            },
+            {
+              label: "Agriculture / Food & Beverage",
+              key: "setting:2",
+            },
+            {
+              label: "Packing & Printing / Office & scool Supplies / Testing Instrument & Equipment",
+              key: "setting:2",
+            },
+            {
+              label: "Commercial Service Equipment / Business Services",
+              key: "setting:2",
+            },
+
           ],
         },
+       
       ],
     },
   ];

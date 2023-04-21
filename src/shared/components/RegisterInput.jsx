@@ -114,7 +114,7 @@ const Register = () => {
       </Form.Item>
       <Form.Item
         name="namecompany"
-        label="name company"
+        label="Name company"
         // disabled={componentDisabled}
         rules={[
           {
@@ -177,7 +177,7 @@ const Register = () => {
 
       <Form.Item
         name="confirm"
-        label="Confirm Password"
+        label="Confirm Password:"
         dependencies={["password"]}
         hasFeedback
         rules={[
@@ -284,9 +284,10 @@ const Register = () => {
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
-          Register
-        </Button>
+      <Button type="primary" htmlType="submit" style={{backgroundColor: '#388087', color: '#FFFFFF'}}>
+  Register
+</Button>
+
       </Form.Item>
     </Form>
   );

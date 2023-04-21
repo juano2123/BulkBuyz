@@ -11,7 +11,7 @@ export const RegisterUser = () => {
         <img className={styles.logo} alt="logo" src={LOGO}></img>
       </header>
       <div className="content-register">
-        <h1>Crea una cuenta</h1>
+        <h1>Crea una Cuenta</h1>
         <div className="form-hdp">
           <UserProvider>
             <Register />

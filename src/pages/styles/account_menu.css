@@ -3,9 +3,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between; /* añadido para alinear al inicio y final */
-  border: 2px solid #000000;
+  border: 2px solid #388087;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #388087;
 }
 
 .helpersss {
