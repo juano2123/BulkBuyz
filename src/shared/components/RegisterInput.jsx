@@ -1,7 +1,5 @@
 import React from "react";
 import { Button, Checkbox, Form, Input, Radio, Select } from "antd";
-import { UserContext } from "../../contex/UserContext";
-import { useContext } from "react";
 
 const { Option } = Select;
 const Register = () => {
@@ -36,13 +34,9 @@ const Register = () => {
     },
   };
   const [form] = Form.useForm();
-  const { SetUser } = useContext(UserContext);
-  // const [componentDisabled, setComponentDisabled] = useState(false); //para poder desabilitar el las opciones de comprador,vendedor...
-  // console.log(componentDisabled);
 
   const onFinish = (values) => {
-    SetUser(values);
-    console.log("Received values of form: ", values);
+        console.log("Received values of form: ", values);
   };
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>

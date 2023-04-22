@@ -11,7 +11,7 @@ const ProductoDetalleMasterPro = () => {
   return (
     <div className="nose_todo">
       <div className="imageProduct">
-        <img src={product.image} alt="" width={400} height={300} />
+        <img src={product.product.image} alt="" width={400} height={300} />
       </div>
 
       <div className="info">

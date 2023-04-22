@@ -2,7 +2,6 @@ import LOGO from "../../images/LOGO.png";
 import styles from "../../pages/styles/Principal.module.css";
 import "../styles/RegisterUser.css";
 import Register from "../../shared/components/RegisterInput";
-import { UserProvider } from "../../contex/UserProvider";
 
 export const RegisterUser = () => {
   return (
@@ -13,9 +12,7 @@ export const RegisterUser = () => {
       <div className="content-register">
         <h1>Crea una Cuenta</h1>
         <div className="form-hdp">
-          <UserProvider>
             <Register />
-          </UserProvider>
         </div>
       </div>
     </div>
