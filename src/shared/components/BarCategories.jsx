@@ -7,89 +7,71 @@ const BarCategories = () => {
 
   const items1 = [
     {
-      
       label: "Categories",
-      key: "SubAccount",
+      key: "setting:0",
       icon: <UserOutlined />,
       children: [
         {
           type: "group",
-         
+
           children: [
             {
               label: "Consumer Electronics / Home Appliances",
               key: "setting:1",
             },
             {
-              label: "Apparel / Fashion Accessories / Timepieces, Jewelry, Eyewear",
+              label:
+                "Apparel / Fashion Accessories / Timepieces, Jewelry, Eyewear",
               key: "setting:2",
             },
             {
               label: "Home & Garden / Furniture / Pet Supplies",
-              key: "setting:2",
+              key: "setting:3",
             },
             {
-              label: "Beauty / Personal Care & Household Cleaning / Health & Medical",
-              key: "setting:2",
+              label:
+                "Beauty / Personal Care & Household Cleaning / Health & Medical",
+              key: "setting:4",
             },
             {
               label: "Sports & Entertainment / Toys & Hobbies / Gifts & Crafts",
-              key: "setting:2",
+              key: "setting:5",
             },
             {
               label: "Luggage, Bags & Cases/ Shoes & Accessories",
-              key: "setting:2",
+              key: "setting:6",
             },
             {
               label: "Agriculture / Food & Beverage",
-              key: "setting:2",
+              key: "setting:7",
             },
             {
-              label: "Packing & Printing / Office & scool Supplies / Testing Instrument & Equipment",
-              key: "setting:2",
+              label:
+                "Packing & Printing / Office & scool Supplies / Testing Instrument & Equipment",
+              key: "setting:8",
             },
             {
               label: "Commercial Service Equipment / Business Services",
-              key: "setting:2",
+              key: "setting:9",
             },
-
           ],
         },
-       
       ],
     },
   ];
   const items2 = [
     {
       label: "Help",
-      key: "SubAccount",
+      key: "setting:2",
       icon: <UserOutlined />,
       children: [
         {
           type: "group",
-          label: "Item 1",
+          label: "Help",
           children: [
             {
-              label: "Option 1",
-              key: "setting:1",
-            },
-            {
-              label: "Option 2",
-              key: "setting:2",
-            },
-          ],
-        },
-        {
-          type: "group",
-          label: "Item 2",
-          children: [
-            {
-              label: "Option 3",
-              key: "setting:3",
-            },
-            {
-              label: "Option 4",
-              key: "setting:4",
+              label: "Contactanos",
+              key: "Contactanos",
             },
           ],
         },

@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import InicioSesion from "./pages/Sign in/InicioSesion";
 import { BrowserRouter } from "react-router-dom";
 import RouterDom from "./Routes/RouterDom";
 import { Provider } from "react-redux";

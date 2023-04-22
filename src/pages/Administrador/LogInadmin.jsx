@@ -1,30 +1,24 @@
 import React from "react";
 import { Button } from "antd/es/radio";
 //import BarraAdmin from "../../shared/BarraAdmin";
-import { Input } from 'antd';
+import { Input } from "antd";
 import "../styles/LoginAdmin.css";
-import LoginFormA from "../../shared/components/inputLoginA";
+// import LoginFormA from "../../shared/components/inputLoginA";
 
 export const LogInadmin = () => {
-
-    return (
-
-        <div className="Todo_logA">
-            {/*Barra*/}
-            {/* <header>
+  return (
+    <div className="Todo_logA">
+      {/*Barra*/}
+      {/* <header>
                 <BarraAdmin />
     </header> */}
 
+      <div className="texto">
+        <h1>Bienvenido Administrador</h1>
+      </div>
+      {/* <LoginFormA /> */}
 
-
-
-                <div className="texto">
-                <h1>Bienvenido Administrador</h1>
-                </div>
-                <LoginFormA/>
-        
-
-{/*
+      {/*
                 <div className="CorreoE">
 
                 <small>Correo Eletronico</small>
@@ -46,14 +40,8 @@ export const LogInadmin = () => {
                 </div>
 
 */}
-
-            </div>
-
-
-
-
-
-    );
+    </div>
+  );
 };
 
-export default LogInadmin
+export default LogInadmin;

@@ -55,11 +55,11 @@ const MenuBarR = () => {
           children: [
             {
               label: "Option 1",
-              key: "setting:1",
+              key: "option 1",
             },
             {
               label: "Option 2",
-              key: "setting:2",
+              key: "option 2",
             },
           ],
         },

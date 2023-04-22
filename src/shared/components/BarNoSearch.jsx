@@ -1,4 +1,3 @@
-import Search from "antd/es/transfer/search";
 import React, { useState } from "react";
 import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
@@ -19,29 +18,15 @@ const BarNoSearch = () => {
       children: [
         {
           type: "group",
-          label: "supu",
+          label: `Hi, ${""}`,
           children: [
             {
-              label: "supu",
-              key: "setting:1",
+              label: "Account",
+              key: "account-nosearch",
             },
             {
-              label: "Option 2",
-              key: "setting:2",
-            },
-          ],
-        },
-        {
-          type: "group",
-          label: "Item 2",
-          children: [
-            {
-              label: "Option 3",
-              key: "setting:3",
-            },
-            {
-              label: "Option 4",
-              key: "setting:4",
+              label: "Sign Out",
+              key: "SignOut-nosearch",
             },
           ],
         },
@@ -53,29 +38,15 @@ const BarNoSearch = () => {
       children: [
         {
           type: "group",
-          label: "Item 1",
+          label: "Message",
           children: [
             {
               label: "Option 1",
-              key: "setting:1",
+              key: "option 1-nosearch",
             },
             {
               label: "Option 2",
-              key: "setting:2",
-            },
-          ],
-        },
-        {
-          type: "group",
-          label: "Item 2",
-          children: [
-            {
-              label: "Option 3",
-              key: "setting:3",
-            },
-            {
-              label: "Option 4",
-              key: "setting:4",
+              key: "option 2-nosearch",
             },
           ],
         },
