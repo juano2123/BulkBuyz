@@ -7,7 +7,6 @@ import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-// import { UserContext } from "../../contex/UserContext";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
@@ -18,7 +17,11 @@ const MenuBarR = () => {
     navigate("/");
   };
 
-  const Name = useSelector((state) => state.user.value);
+  const Name = useSelector((state) => state.user);
+
+  
+
+
 
   console.log(Name);
 
