@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 //TERMINAR
 const ProductoDetalleMasterPro = () => {
-  const location = useLocation();
+  const { location } = useLocation();
   const product = location.state;
 
   console.log(product);

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = (props) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/product", { state: props });
+    navigate("/product", { state: props.product.image });
   };
   return (
     <>
