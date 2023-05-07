@@ -3,15 +3,15 @@ import { useLocation } from "react-router-dom";
 
 //TERMINAR
 const ProductoDetalleMasterPro = () => {
-  const { location } = useLocation();
-  const product = location.state;
+  // const { location } = useLocation();
+  // const product = location.state;
 
-  console.log(product);
+  // console.log(product);
 
   return (
     <div className="nose_todo">
       <div className="imageProduct">
-        <img src={product.product.image} alt="" width={400} height={300} />
+        {/* <img src={product.product.image} alt="" width={400} height={300} /> */}
       </div>
 
       <div className="info">
