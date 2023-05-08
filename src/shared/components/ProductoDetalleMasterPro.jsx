@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import MenuBarR from "../../shared/components/MenuBar";
+import { Image } from 'antd';
 
 //TERMINAR
 const ProductoDetalleMasterPro = () => {
@@ -10,16 +12,20 @@ const ProductoDetalleMasterPro = () => {
 
   return (
     <div className="nose_todo">
+         <MenuBarR />
       <div className="imageProduct">
-        {/* <img src={product.product.image} alt="" width={400} height={300} /> */}
+      <Image
+    width={500}
+    src="https://www.apple.com/v/airpods/t/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg"
+  />
       </div>
 
       <div className="info">
         <div className="infodetail">
-          <span>info detail</span>
+          <span>2023 TWS 2nd generation gaming in-ear earphone 3rd wireless earbuds 3 Pro 2 For iphone</span>
         </div>
         <div className="price">
-          <span>precio al por mayor</span>
+          <span>$6.50 /piece |2 piece/pieces (Min. order)</span>
         </div>
         <div className="details_especific">
           <div className="detail">

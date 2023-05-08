@@ -5,6 +5,8 @@ import BarCategories from "../../shared/components/BarCategories";
 import "../styles/account_menu.css";
 import ProductCard from "../../shared/components/ProductCard";
 import products from "../../jsonusers/products.json";
+import { Button} from 'antd';
+import {MessageOutlined} from '@ant-design/icons';
 
 const AccountMenu = () => {
   console.log(products);
@@ -35,6 +37,7 @@ const AccountMenu = () => {
       <div className="bar_categories">
         <BarCategories />
       </div>
+    
 
       <div className="card">
         {products.products.map((product, index) => {
