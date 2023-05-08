@@ -8,6 +8,24 @@ import products from "../../jsonusers/products.json";
 
 const AccountMenu = () => {
   console.log(products);
+  fetch("http://localhost:4000/api/auth/new", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: "John Doe",
+      email: "johndoe@example.com",
+      password: "mysecretpassword",
+    }),
+  })
+    .then((response) => {
+      // Manejar la respuesta del servidor
+    })
+    .catch((error) => {
+      // Manejar errores de la solicitud
+    });
+
   return (
     <div className="inicio">
       {/* aqui podes mejorarla no se  */}
@@ -26,4 +44,4 @@ const AccountMenu = () => {
     </div>
   );
 };
-export default AccountMenu; 
+export default AccountMenu;
