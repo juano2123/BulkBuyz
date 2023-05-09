@@ -24,7 +24,7 @@ const RoterDom = () => {
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/product" element={<ProductoDetalleMasterPro />} />
-        <Route path="/Mensaje" element={<MensajeC />} />
+        <Route path="/product" element={<MensajeP />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </>
