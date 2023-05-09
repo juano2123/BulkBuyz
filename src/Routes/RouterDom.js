@@ -8,6 +8,7 @@ import LogInadmin from "../pages/Administrador/LogInadmin";
 import Publicarproducto from "../pages/Proveedor/Publicarproducto";
 import MiPerfil from "../pages/Account/MiPerfii";
 import ProductoDetalleMasterPro from "../shared/components/ProductoDetalleMasterPro";
+import MensajeP from "../pages/Proveedor/MensajeP";
 const RoterDom = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const RoterDom = () => {
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/product" element={<ProductoDetalleMasterPro />} />
+        <Route path="/product" element={<MensajeP />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </>
