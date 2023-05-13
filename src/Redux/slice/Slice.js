@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-import users from "../../jsonusers/users.json";
+// import users from "../../jsonusers/users.json";
 
 const initialState = { users: [], currentUser: null, isLoggedIn: false };
-
 const userSlice = createSlice({
   name: "users",
   initialState,
   reducers: {
     setUsers: (state, action) => {
       state.users = action.payload;
+      console.log(initialState);
     },
     /*login: (state, action) => {
       const { username, password } = action.payload;

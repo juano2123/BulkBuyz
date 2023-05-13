@@ -4,7 +4,7 @@
   padding: 0;
 }
 header {
-  background: linear-gradient(#F6F6F2, #F6F6F2);
+  background: linear-gradient(#f6f6f2, #f6f6f2);
 }
 html {
   height: 100%;
@@ -14,8 +14,9 @@ body {
   /* background-size: 400px; */
   height: 100%;
 
-  background: #F6F6F2;
+  background: #f6f6f2;
 }
+
 .logo {
   margin-top: 10px;
   height: 60px;

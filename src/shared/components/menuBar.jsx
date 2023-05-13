@@ -7,23 +7,34 @@ import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
   const onSearch = (value = "") => console.log(value);
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
 
   const handleClick = () => {
     navigate("/");
   };
+  console.log(username);
 
-  const Name = useSelector((state) => state.user);
-
-  
-
-
-
-  console.log(Name);
+  const handleGetUserInfo = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await axios.get("/api/userinfo", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const userName = response.data.name;
+      setUsername(userName);
+      console.log(userName);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   //cambiar las keys
 
@@ -34,7 +45,7 @@ const MenuBarR = () => {
       children: [
         {
           type: "group",
-          label: `Hi, ${""}`,
+          label: `Hi, ${handleGetUserInfo()}`,
           children: [
             {
               label: "Account",

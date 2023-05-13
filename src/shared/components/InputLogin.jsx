@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import usersData from "../../jsonusers/users.json";
 import { Button, Checkbox, Form, Input } from "antd";
 import { useNavigate } from "react-router-dom";
 // import { UserContext } from "../../contex/UserContext";
 // import { useContext } from "react";
 
 import { useDispatch } from "react-redux";
-import { setUsers } from "../../Redux/slice/Slice";
+// import { setUsers } from "../../Redux/slice/Slice";
+import axios from "axios";
 
 const InputLogin = () => {
   const [username, setUsername] = useState("");
@@ -15,8 +15,8 @@ const InputLogin = () => {
   const dispatch = useDispatch();
   // const { SetUser } = useContext(UserContext);
   const navigate = useNavigate();
-
-  const handleSubmit = (event) => {
+  /* 
+  const handleSubmits = (event) => {
     event.preventDefault();
 
     // Buscamos el usuario en el archivo JSON
@@ -35,6 +35,36 @@ const InputLogin = () => {
       console.log(`se inicio bien ${user.name}`);
 
       navigate("/");
+    }
+  };
+
+  // ...*/
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "http://localhost:4000/api/auth/login",
+        {
+          username,
+          password,
+        }
+      );
+
+      // El token se almacena en la respuesta de la API
+      const token = response.data.token;
+
+      // Almacenar el token en el almacenamiento local del navegador
+      localStorage.setItem("token", token);
+
+      // Limpiar cualquier mensaje de error previo
+      setErrorMessage("");
+
+      // Navegar al inicio
+      navigate("/");
+    } catch (error) {
+      setErrorMessage("Credenciales inválidas");
     }
   };
 
