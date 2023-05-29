@@ -54,9 +54,12 @@ const InputLogin = () => {
 
       // El token se almacena en la respuesta de la API
       const token = response.data.token;
+      const name = response.data.usuario.name;
 
       // Almacenar el token en el almacenamiento local del navegador
       localStorage.setItem("token", token);
+
+      localStorage.setItem("name", name); // /*************************************** */cambiar para que este mejor/*************************************** */
 
       // Limpiar cualquier mensaje de error previo
       setErrorMessage("");

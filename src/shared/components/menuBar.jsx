@@ -19,22 +19,7 @@ const MenuBarR = () => {
     navigate("/");
   };
   console.log(username);
-
-  const handleGetUserInfo = async () => {
-    try {
-      const token = localStorage.getItem("token");
-      const response = await axios.get("/api/userinfo", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      const userName = response.data.name;
-      setUsername(userName);
-      console.log(userName);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  var cat = localStorage.getItem("name");
 
   //cambiar las keys
 
@@ -45,7 +30,7 @@ const MenuBarR = () => {
       children: [
         {
           type: "group",
-          label: `Hi, ${handleGetUserInfo()}`,
+          label: `Hi, ${cat}`,
           children: [
             {
               label: "Account",
