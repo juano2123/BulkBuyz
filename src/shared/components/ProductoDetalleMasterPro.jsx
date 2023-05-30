@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "./MenuBar";
 import { Image } from 'antd';
 
 //TERMINAR

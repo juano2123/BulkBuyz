@@ -10,6 +10,8 @@ import MiPerfil from "../pages/Account/MiPerfii";
 import ProductoDetalleMasterPro from "../shared/components/ProductoDetalleMasterPro";
 import MensajeP from "../pages/Proveedor/MensajeP";
 import MensajeC from "../pages/Account/MensajeC";
+import PubProductoInput from "../shared/components/PubProductoInput";
+// import InfoAccount from "../pages/Account/InfoAccount";
 const RoterDom = () => {
   return (
     <>
@@ -26,6 +28,9 @@ const RoterDom = () => {
         <Route path="/product" element={<ProductoDetalleMasterPro />} />
         <Route path="/MensajeP" element={<MensajeP />} />
         <Route path="/*" element={<Navigate to="/" />} />
+        <Route path="/PublicarProducto" element={< PubProductoInput/>} />
+       
+      
       </Routes>
     </>
   );
