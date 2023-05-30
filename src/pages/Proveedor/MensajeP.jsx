@@ -1,7 +1,15 @@
 import React from "react";
 import MenuBarR from "../../shared/components/MenuBar";
-import { Radio, Upload, Button, Input } from "antd";
-import { SendOutlined, SearchOutlined, VideoCameraOutlined, FileOutlined, PictureOutlined, CloseOutlined, ShareAltOutlined, StarOutlined } from "@ant-design/icons";
+import { Upload, Button, Input } from "antd";
+import {
+  SendOutlined,
+  SearchOutlined,
+  FileOutlined,
+  PictureOutlined,
+  CloseOutlined,
+  ShareAltOutlined,
+  StarOutlined,
+} from "@ant-design/icons";
 
 const MensajeP = () => {
   return (
@@ -13,20 +21,26 @@ const MensajeP = () => {
       <section className="body-chat">
         <div className="seccion-titulo">
           <h3>
-            <i className="fas fa-comments"></i> 
+            <i className="fas fa-comments"></i>
           </h3>
         </div>
         <div className="seccion-usuarios">
           <div className="seccion-buscar">
             <div className="input-buscar">
-              <Input.Search placeholder="Buscar usuario" enterButton={<SearchOutlined />} />
+              <Input.Search
+                placeholder="Buscar usuario"
+                enterButton={<SearchOutlined />}
+              />
             </div>
           </div>
           <div className="seccion-lista-usuarios">
             <div className="usuario">
               <div className="avatar">
-              <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000" alt="img" />
-                
+                <img
+                  src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000"
+                  alt="img"
+                />
+
                 <span className="estado-usuario enlinea"></span>
               </div>
               <div className="cuerpo">
@@ -37,7 +51,10 @@ const MensajeP = () => {
             </div>
             <div className="usuario">
               <div className="avatar">
-                <img src="https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1685438938.jpg" alt="img" />
+                <img
+                  src="https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1685438938.jpg"
+                  alt="img"
+                />
                 <span className="estado-usuario ocupado"></span>
               </div>
               <div className="cuerpo">
@@ -48,7 +65,10 @@ const MensajeP = () => {
             </div>
             <div className="usuario">
               <div className="avatar">
-                <img src="https://www.shutterstock.com/image-photo/portrait-young-smiling-caucasian-man-260nw-1491969899.jpg" alt="img" />
+                <img
+                  src="https://www.shutterstock.com/image-photo/portrait-young-smiling-caucasian-man-260nw-1491969899.jpg"
+                  alt="img"
+                />
                 <span className="estado-usuario desconectado"></span>
               </div>
               <div className="cuerpo">
@@ -62,7 +82,10 @@ const MensajeP = () => {
         <div className="seccion-chat">
           <div className="usuario-seleccionado">
             <div className="avatar">
-              <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000" alt="img" />
+              <img
+                src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000"
+                alt="img"
+              />
             </div>
             <div className="cuerpo">
               <span>Nombre de usuario</span>
@@ -82,12 +105,16 @@ const MensajeP = () => {
           <div className="panel-chat">
             <div className="mensaje">
               <div className="avatar">
-                <img src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg" alt="img" />
+                <img
+                  src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg"
+                  alt="img"
+                />
               </div>
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolor eligendi voluptatum dolore voluptas iure.
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 5 min
@@ -108,7 +135,8 @@ const MensajeP = () => {
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolor eligendi voluptatum dolore voluptas iure.
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 6 min
@@ -124,7 +152,10 @@ const MensajeP = () => {
                 </ul>
               </div>
               <div className="avatar">
-                <img src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg" alt="img" />
+                <img
+                  src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg"
+                  alt="img"
+                />
               </div>
             </div>
           </div>
@@ -139,7 +170,11 @@ const MensajeP = () => {
                 </Upload>
               </div>
               <Input.TextArea placeholder="Escribir mensaje" />
-              <Button type="button" className="enviar" icon={<SendOutlined />} />
+              <Button
+                type="button"
+                className="enviar"
+                icon={<SendOutlined />}
+              />
             </form>
           </div>
         </div>

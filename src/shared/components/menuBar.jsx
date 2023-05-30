@@ -34,7 +34,13 @@ const MenuBarR = () => {
             {
               label: "Account",
               key: "account",
-              onClick: () => navigate("/login"),
+              onClick: () => {
+                if (!cat === undefined) {
+                  navigate("/login");
+                } else {
+                  navigate("/");
+                }
+              },
             },
             {
               label: "Sign Out",
