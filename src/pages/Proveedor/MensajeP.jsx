@@ -1,24 +1,19 @@
 import React from "react";
 import MenuBarR from "../../shared/components/MenuBar";
-import { Radio } from "antd";
-import { Upload, Button } from "antd";
-import {  SendOutlined } from "@ant-design/icons";
-import { Input } from "antd";
-import { SearchOutlined, VideoCameraOutlined, PhoneOutlined, FileOutlined, PictureOutlined, CloseOutlined, ShareAltOutlined } from "@ant-design/icons";
-
-
-
+import { Radio, Upload, Button, Input } from "antd";
+import { SendOutlined, SearchOutlined, VideoCameraOutlined, FileOutlined, PictureOutlined, CloseOutlined, ShareAltOutlined, StarOutlined } from "@ant-design/icons";
 
 const MensajeP = () => {
-    return (
+  return (
+    <div>
+      <div className="menu-bar">
+        <MenuBarR />
+      </div>
+
       <section className="body-chat">
-        <div className="Barra_A">
-          <MenuBarR />
-        </div>
         <div className="seccion-titulo">
           <h3>
-            <i className="fas fa-comments"></i>
-            Sistema de mensajería
+            <i className="fas fa-comments"></i> 
           </h3>
         </div>
         <div className="seccion-usuarios">
@@ -28,7 +23,40 @@ const MensajeP = () => {
             </div>
           </div>
           <div className="seccion-lista-usuarios">
-            {/* User list */}
+            <div className="usuario">
+              <div className="avatar">
+              <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000" alt="img" />
+                
+                <span className="estado-usuario enlinea"></span>
+              </div>
+              <div className="cuerpo">
+                <span>Nombre apellido</span>
+                <span>detalles de mensaje</span>
+              </div>
+              <span className="notificacion">3</span>
+            </div>
+            <div className="usuario">
+              <div className="avatar">
+                <img src="https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1685438938.jpg" alt="img" />
+                <span className="estado-usuario ocupado"></span>
+              </div>
+              <div className="cuerpo">
+                <span>Nombre apellido</span>
+                <span>detalles de mensaje</span>
+              </div>
+              <span className="notificacion">1</span>
+            </div>
+            <div className="usuario">
+              <div className="avatar">
+                <img src="https://www.shutterstock.com/image-photo/portrait-young-smiling-caucasian-man-260nw-1491969899.jpg" alt="img" />
+                <span className="estado-usuario desconectado"></span>
+              </div>
+              <div className="cuerpo">
+                <span>Nombre apellido</span>
+                <span>detalles de mensaje</span>
+              </div>
+              <span className="notificacion">1</span>
+            </div>
           </div>
         </div>
         <div className="seccion-chat">
@@ -43,10 +71,10 @@ const MensajeP = () => {
             <div className="opciones">
               <ul>
                 <li>
-                  <Button type="button" icon={<VideoCameraOutlined />} />
+                  {/* <Button type="button" icon={<VideoCameraOutlined />} /> */}
                 </li>
                 <li>
-                  <Button type="button" icon={<PhoneOutlined />} />
+                  <Button type="button" icon={<StarOutlined />} />
                 </li>
               </ul>
             </div>
@@ -54,12 +82,12 @@ const MensajeP = () => {
           <div className="panel-chat">
             <div className="mensaje">
               <div className="avatar">
-                <img src="ruta_img" alt="img" />
+                <img src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg" alt="img" />
               </div>
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Dolor eligendi voluptatum dolore voluptas iure.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 5 min
@@ -80,7 +108,7 @@ const MensajeP = () => {
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Dolor eligendi voluptatum dolore voluptas iure.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 6 min
@@ -96,7 +124,7 @@ const MensajeP = () => {
                 </ul>
               </div>
               <div className="avatar">
-                <img src="ruta_img" alt="img" />
+                <img src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg" alt="img" />
               </div>
             </div>
           </div>
@@ -117,8 +145,8 @@ const MensajeP = () => {
         </div>
         <div className="Mensajep_todo"></div>
       </section>
-    );
-  };
-  
-  export default MensajeP;
-  
+    </div>
+  );
+};
+
+export default MensajeP;
