@@ -1,13 +1,11 @@
 import Search from "antd/es/transfer/search";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { UserOutlined, InboxOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import styles from "../../pages/styles/Principal.module.css";
 import LOGO from "../../images/LOGO.png";
 import styleBar from "../../pages/styles/BarMenu.module.css";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import axios from "axios";
 
 //import LOGO from "./BulkBuyz/src/images/LOGO.PNG";
 const MenuBarR = () => {
@@ -31,10 +29,12 @@ const MenuBarR = () => {
         {
           type: "group",
           label: `Hi, ${cat}`,
+
           children: [
             {
               label: "Account",
               key: "account",
+              onClick: () => navigate("/login"),
             },
             {
               label: "Sign Out",

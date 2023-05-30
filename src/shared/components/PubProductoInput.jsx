@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Cascader, Checkbox, Form, Input, Radio, Select,  Upload } from "antd";
-import { PlusOutlined } from '@ant-design/icons';
-import { CameraOutlined,} from '@ant-design/icons';
+import { Button, Form, Input, Select, Upload } from "antd";
+import { CameraOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 const { Option } = Select;
@@ -37,10 +36,9 @@ const PublicarProducto = () => {
     },
   };
 
-  
   const [form] = Form.useForm();
-//   const [componentDisabled] = useState(false);
-//   console.log(componentDisabled);
+  //   const [componentDisabled] = useState(false);
+  //   console.log(componentDisabled);
 
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
@@ -106,7 +104,6 @@ const PublicarProducto = () => {
         <Input />
       </Form.Item>
 
-
       <Form.Item
         name="title of products"
         label="Title of products"
@@ -136,9 +133,9 @@ const PublicarProducto = () => {
           },
         ]}
       >
-          <TextArea rows={4} />
+        <TextArea rows={4} />
       </Form.Item>
-<h1>Set a price</h1>
+      <h1>Set a price</h1>
       <Form.Item
         name="price"
         label="Price"
@@ -159,34 +156,32 @@ const PublicarProducto = () => {
       <h2>Upload up to 10 photos</h2>
 
       <Form.Item label="Upload" valuePropName="fileList">
-          <Upload action="/upload.do" listType="picture-card">
-            <div>
+        <Upload action="/upload.do" listType="picture-card">
+          <div>
             <CameraOutlined />
-              <div style={{ marginTop: 8 }}>Upload</div>
-            </div>
-          </Upload>
-        </Form.Item>
+            <div style={{ marginTop: 8 }}>Upload</div>
+          </div>
+        </Upload>
+      </Form.Item>
 
-        <h2>Check your details</h2>
+      <h2>Check your details</h2>
 
-      
-        <Form.Item
+      <Form.Item
         name="name"
         label="Name"
         rules={[
-            {
-              type: "string",
-              message: "The input is not valid",
-            },
-            {
-              required: true,
-              message: "Please input a name!",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-     
+          {
+            type: "string",
+            message: "The input is not valid",
+          },
+          {
+            required: true,
+            message: "Please input a name!",
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
 
       <Form.Item
         name="phone_number"
@@ -206,11 +201,6 @@ const PublicarProducto = () => {
         />
       </Form.Item>
 
-   
-
-      
-
-      
       <Form.Item {...tailFormItemLayout}>
         <Button type="primary" htmlType="submit">
           Register

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { UserOutlined } from "@ant-design/icons";
 import { Button, Menu } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const BarCategories = () => {
   //cambiar las keys
+  const navigate = useNavigate();
 
   const items1 = [
     {
@@ -79,6 +81,9 @@ const BarCategories = () => {
     },
   ];
   const [current, setCurrent] = useState("mail");
+  const hadlesub = () => {
+    navigate("/publicarProducto");
+  };
   const onClick = (e) => {
     console.log("click ", e);
     setCurrent(e.key);
@@ -95,7 +100,7 @@ const BarCategories = () => {
         />
       </div>
       <div className="helpersss">
-        <Button className="btn-sell " type="text">
+        <Button className="btn-sell " type="text" onClick={hadlesub}>
           Sell on BulkBuyz
         </Button>
 
