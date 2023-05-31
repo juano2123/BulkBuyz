@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "usuario": {
+        "nombre": "Natalia Bejarano",
+        "estado": "Activo - Escribiendo...",
+        "avatar": "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000"
+      }
+    },
+    {
+      "id": 2,
+      "usuario": {
+        "nombre": "Juan Perez",
+        "estado": "Conectado",
+        "avatar": "https://example.com/avatar2.jpg"
+      }
+    }
+  ]
+  
