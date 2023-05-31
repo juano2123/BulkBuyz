@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Checkbox, Form, Input, Radio, Select } from "antd";
+import { Button, Form, Input, Select } from "antd";
 import { useState } from "react";
 
 const { Option } = Select;
@@ -225,6 +225,7 @@ const Register = () => {
           type="primary"
           htmlType="submit"
           style={{ backgroundColor: "#388087", color: "#FFFFFF" }}
+          // onClick={navigate("/");}
         >
           Register
         </Button>
