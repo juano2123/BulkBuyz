@@ -15,30 +15,6 @@ const InputLogin = () => {
   const dispatch = useDispatch();
   // const { SetUser } = useContext(UserContext);
   const navigate = useNavigate();
-  /* 
-  const handleSubmits = (event) => {
-    event.preventDefault();
-
-    // Buscamos el usuario en el archivo JSON
-    const user = usersData.users.find((u) => u.username === username);
-
-    // console.log(user);
-
-    if (!user) {
-      setErrorMessage("Usuario no encontrado");
-    } else if (user.password !== password) {
-      setErrorMessage("Contraseña incorrecta");
-    } else {
-      setErrorMessage("");
-      // upDatevalu(user)
-      dispatch(setUsers({ user }));
-      console.log(`se inicio bien ${user.name}`);
-
-      navigate("/");
-    }
-  };
-
-  // ...*/
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -57,9 +33,10 @@ const InputLogin = () => {
       const name = response.data.usuario.name;
 
       // Almacenar el token en el almacenamiento local del navegador
-      localStorage.setItem("token", token);
+      // localStorage.setItem("token", token);
 
-      localStorage.setItem("name", name); // /*************************************** */cambiar para que este mejor/*************************************** */
+      // localStorage.setItem("name", name);
+      // /*************************************** */cambiar para que este mejor/*************************************** */
 
       // Limpiar cualquier mensaje de error previo
       setErrorMessage("");
