@@ -87,7 +87,7 @@ const MensajeP = () => {
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
+  
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 5 min
@@ -108,7 +108,7 @@ const MensajeP = () => {
               <div className="cuerpo">
                 {/* <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> */}
                 <div className="texto">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi voluptatum dolore voluptas iure.
+                  
                   <span className="tiempo">
                     <i className="far fa-clock"></i>
                     Hace 6 min
