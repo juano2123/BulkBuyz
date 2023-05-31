@@ -35,7 +35,7 @@ const MenuBarR = () => {
               label: "Account",
               key: "account",
               onClick: () => {
-                if (!cat === undefined) {
+                if (cat === null) {
                   navigate("/login");
                 } else {
                   navigate("/");

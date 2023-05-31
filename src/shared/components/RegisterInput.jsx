@@ -1,8 +1,12 @@
 import React from "react";
 import { Button, Checkbox, Form, Input, Radio, Select } from "antd";
+import { useState } from "react";
 
 const { Option } = Select;
+
 const Register = () => {
+  const [loading, setLoading] = useState(false);
+
   const formItemLayout = {
     labelCol: {
       xs: {
@@ -35,8 +39,36 @@ const Register = () => {
   };
   const [form] = Form.useForm();
 
-  const onFinish = (values) => {
-        console.log("Received values of form: ", values);
+  const onFinish = async (values) => {
+    try {
+      setLoading(true);
+
+      const response = await fetch("http://localhost:4000/api/auth/new", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log("User registered successfully");
+        // Do something after successful registration
+      } else {
+        console.error(
+          "An error occurred while registering the user:",
+          data.error
+        );
+        // Handle the error
+      }
+    } catch (error) {
+      console.error("An error occurred while registering the user:", error);
+      // Handle the error
+    } finally {
+      setLoading(false);
+    }
   };
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
@@ -99,45 +131,6 @@ const Register = () => {
         <Input />
       </Form.Item>
 
-      <Form.Item label="Radio">
-        <Radio.Group>
-          <Radio value="comprador">comprador</Radio>
-          <Radio value="vendedor"> vendedor </Radio>
-          <Radio value="ambos"> ambos </Radio>
-        </Radio.Group>
-      </Form.Item>
-      <Form.Item
-        name="namecompany"
-        label="Name company"
-        // disabled={componentDisabled}
-        rules={[
-          {
-            type: "string",
-            message: "The input is not valid",
-          },
-          {
-            required: false,
-            message: "Please input your name company",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name="id "
-        label="id"
-        tooltip="Id propio o de la empresa"
-        rules={[
-          {
-            required: true,
-            message: "Please input your Id!",
-            whitespace: true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-
       <Form.Item
         name="email"
         label="E-mail"
@@ -168,7 +161,7 @@ const Register = () => {
       >
         <Input.Password />
       </Form.Item>
-
+      {/*  
       <Form.Item
         name="confirm"
         label="Confirm Password:"
@@ -192,37 +185,21 @@ const Register = () => {
         ]}
       >
         <Input.Password />
-      </Form.Item>
+      </Form.Item>*/}
 
       <Form.Item
-        name="nickname"
-        label="Nickname"
+        name="username"
+        label="username"
         tooltip="What do you want others to call you?"
         rules={[
           {
             required: true,
-            message: "Please input your nickname!",
+            message: "Please input your username!",
             whitespace: true,
           },
         ]}
       >
         <Input />
-      </Form.Item>
-      <Form.Item
-        name="country"
-        label="Pais"
-        rules={[
-          {
-            required: true,
-            message: "Please select a country!",
-          },
-        ]}
-      >
-        <Select placeholder="select your country">
-          <Option value="Colombia">Colombia</Option>
-          <Option value="Usa">Usa</Option>
-          <Option value="other">Other</Option>
-        </Select>
       </Form.Item>
 
       <Form.Item
@@ -243,45 +220,14 @@ const Register = () => {
         />
       </Form.Item>
 
-      <Form.Item
-        name="gender"
-        label="Gender"
-        rules={[
-          {
-            required: true,
-            message: "Please select gender!",
-          },
-        ]}
-      >
-        <Select placeholder="select your gender">
-          <Option value="male">Male</Option>
-          <Option value="female">Female</Option>
-          <Option value="other">Other</Option>
-        </Select>
-      </Form.Item>
-
-      <Form.Item
-        name="agreement"
-        valuePropName="checked"
-        rules={[
-          {
-            validator: (_, value) =>
-              value
-                ? Promise.resolve()
-                : Promise.reject(new Error("Should accept agreement")),
-          },
-        ]}
-        {...tailFormItemLayout}
-      >
-        <Checkbox>
-          I have read the <a href="/login">agreement</a>
-        </Checkbox>
-      </Form.Item>
       <Form.Item {...tailFormItemLayout}>
-      <Button type="primary" htmlType="submit" style={{backgroundColor: '#388087', color: '#FFFFFF'}}>
-  Register
-</Button>
-
+        <Button
+          type="primary"
+          htmlType="submit"
+          style={{ backgroundColor: "#388087", color: "#FFFFFF" }}
+        >
+          Register
+        </Button>
       </Form.Item>
     </Form>
   );
