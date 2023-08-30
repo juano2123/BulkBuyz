@@ -1,0 +1,13 @@
+.toro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* centra verticalmente */
+}
+
+.bar_search {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  font-size: 24px;
+}

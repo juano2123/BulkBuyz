@@ -1,12 +1,80 @@
-.logo{
-    height: 50px;
-    width: 50px;
+.todo-menos-header {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .todo-menos-header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Imagen {
+    display: flex;
+    align-items: center;
+  }
+  /* 
+  .form-item-password {
+    width: 100px;
+  } */
 }
 
-.Inicio_sesion{
+/* .Imagen {
+  display: flex;
+  align-items: center;
+  width: auto;
+} */
 
-    background: black;
-    
+.img-img-ref {
+  /* max-width: 50%; */
+  height: auto;
+}
 
+.logo {
+  margin-top: 10px;
+  height: 60px;
+  width: 80 px;
+}
 
+.btn-register {
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+}
+
+.btn-login {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.Area_login {
+  display: flex;
+  flex-direction: column;
+}
+.Area_login a {
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.Ingresar_datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+.Ingresar_datos h1 {
+  margin-block-end: 10px;
+  align-items: center;
+  font-size: 56px;
+  color: #388087;
+}
+.btn_ingresar {
+  margin: 10px;
+  width: 60%;
+  color: #ccf4fc;
+  background: #6FB3B8;
+  border: 2px solid #388087;
 }
