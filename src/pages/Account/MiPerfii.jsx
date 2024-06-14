@@ -1,5 +1,5 @@
 import React from "react";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Space, Button, Image } from 'antd';
 import Imagen from "../../images/Flag-Colombia.jpg";

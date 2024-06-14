@@ -1,5 +1,5 @@
 import React from "react";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 import PublicarProducto from "../../shared/components/PubProductoInput";
 
 export const Publicarproducto = () => {

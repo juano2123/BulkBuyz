@@ -1,4 +1,4 @@
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 import "../styles/InfoAccount.css";
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Space, Button } from 'antd';

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import MenuBarR from "../../shared/components/MenuBar";
+import MenuBarR from "../../shared/components/menuBar";
 import { Radio, Upload, Button, Input } from "antd";
 import { SendOutlined, SearchOutlined, VideoCameraOutlined, FileOutlined, PictureOutlined, CloseOutlined, ShareAltOutlined, StarOutlined } from "@ant-design/icons";
 import "../styles/MensajeCliente.css";
