@@ -26,7 +26,7 @@ Este proyecto de e-comerce en **PROCESO** esta desarrollada en React en conjunto
     
 este el proyecto ya desplegado
 <div align="center">
-<a href="https://caliwood.netlify.app?id=proyector/">
+<a href="https://bulkbuyz.netlify.app/">
 <img src="public/readme.png">
 </a>
 <p></p>
