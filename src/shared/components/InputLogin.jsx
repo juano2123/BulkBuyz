@@ -21,7 +21,7 @@ const InputLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://bulkzbuy.up.railway.app/api/auth/login",
+        "https://backbulkbuyz.up.railway.app/api/auth/login",
         {
           username,
           password,
